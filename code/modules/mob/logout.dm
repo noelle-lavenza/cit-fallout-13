@@ -4,6 +4,9 @@
 	SStgui.on_logout(src)
 	unset_machine()
 	remove_from_player_list()
+	// FALLOUT 13 EDIT
+	logout_time = world.time
+	// END FALLOUT 13 EDIT
 	..()
 
 	if(loc)

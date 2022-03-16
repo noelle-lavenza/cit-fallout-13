@@ -235,18 +235,22 @@
 	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 	var/deflection_chance = 0 //Chance for the power armor to redirect a blocked projectile
 
-/obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, mob/equipper, slot, disable_warning = 1)
-	var/mob/living/carbon/human/H = user
-	if(src == H.wear_suit) //Suit is already equipped
+/obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/living/carbon/human/user, mob/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE, clothing_check = FALSE, list/return_warning)
+	if(src == user.wear_suit) //Suit is already equipped
 		return ..()
-	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == ITEM_SLOT_OCLOTHING && requires_training)
-		to_chat(user, span_warning("You don't have the proper training to operate the power armor!"))
-		return 0
+	if(slot == ITEM_SLOT_OCLOTHING)
+		if (!HAS_TRAIT(user, TRAIT_PA_WEAR) && requires_training)
+			if(return_warning)
+				return_warning[1] = span_warning("You don't have the proper training to operate [src]!")
+			return FALSE
+		return ..()
+	return FALSE
+
+/obj/item/clothing/suit/armor/f13/power_armor/equipped(mob/user, slot)
 	if(slot == ITEM_SLOT_OCLOTHING)
 		ADD_TRAIT(user, TRAIT_STUNIMMUNE,	"stun_immunity")
 		ADD_TRAIT(user, TRAIT_PUSHIMMUNE,	"push_immunity")
-		return ..()
-	return
+	return ..()
 
 /obj/item/clothing/suit/armor/f13/power_armor/dropped(mob/user)
 //	var/mob/living/carbon/human/H = user

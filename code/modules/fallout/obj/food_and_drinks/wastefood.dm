@@ -188,6 +188,6 @@
 	name = "agave leaf"
 	desc = "A strange kind of fleshy grass often used as a primitive burn medication that rapidly depletes stored nutrients in the body."
 	icon_state = "Agave Leaf"
-	icon = 'icons/obj/flora/wastelandflora.dmi'
+	icon = 'icons/fallout/objects/wastelandflora.dmi'
 	juice_results = list(/datum/reagent/consumable/tea/agavetea = 0)
 	distill_reagent = /datum/reagent/consumable/ethanol/tequila

@@ -186,3 +186,5 @@
 
 /// A mock client, provided by tests and friends
 	var/datum/client_interface/mock_client
+
+	var/logout_time = 0 // What time the player logged out, for preventing cryo of crashed players.

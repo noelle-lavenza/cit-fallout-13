@@ -98,7 +98,7 @@
 	wound_bonus = 15
 	sharpness = SHARP_EDGED
 	wound_falloff_tile = 0
-	
+
 ///ammo casings (CASELESS AMMO CASINGS WOOOOOOOO)///
 
 /obj/item/ammo_casing/caseless/flechetteap

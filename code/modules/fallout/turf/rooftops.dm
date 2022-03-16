@@ -5,8 +5,6 @@
 	desc = "It's a roof. What more do you want?"
 	icon = 'icons/fallout/turfs/f13rooftop.dmi'
 	icon_state = "brick_1"
-	turf_light_range = 3
-	turf_light_power = 0.75
 
 /turf/open/indestructible/ground/outside/roof/red
 	icon_state = "brick_r"

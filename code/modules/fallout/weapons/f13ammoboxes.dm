@@ -565,3 +565,4 @@
 
 /obj/item/ammo_box/l10mm/empty
 	start_empty = 1
+

@@ -31,7 +31,7 @@
 	icon = 'icons/fallout/turfs/walls/wood.dmi'
 	icon_state = "wood0"
 	hardness = 60
-	smooth = SMOOTH_OLD
+	smooth = SMOOTH_TRUE
 	unbreakable = 0
 	baseturfs = /turf/open/floor/plating/wooden
 	sheet_type = /obj/item/stack/sheet/mineral/wood
@@ -91,7 +91,7 @@
 	icon = 'icons/fallout/turfs/walls/interior.dmi'
 	icon_state = "interior0"
 	hardness = 10
-	smooth = SMOOTH_OLD
+	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/turf/closed/wall/f13/wood/interior, /turf/closed/wall)
 
 /turf/closed/wall/f13/store
@@ -113,7 +113,7 @@
 	icon = 'icons/fallout/turfs/walls/tent.dmi'
 	icon_state = "tent"
 	hardness = 10
-	smooth = SMOOTH_OLD
+	smooth = SMOOTH_TRUE
 	//	disasemblable = 0
 	baseturfs = /turf/open/indestructible/ground/outside/ruins
 	girder_type = 0
@@ -140,7 +140,7 @@
 	icon = 'icons/fallout/turfs/walls/tunnel.dmi'
 	icon_state = "tunnel"
 	hardness = 100
-	smooth = SMOOTH_OLD
+	smooth = SMOOTH_TRUE
 	//	disasemblable = 0
 	girder_type = 0
 	sheet_type = null
@@ -153,7 +153,7 @@
 	icon_state = "vault"
 	hardness = 130
 	explosion_block = 5
-	smooth = SMOOTH_OLD
+	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/turf/closed/wall/f13/vault, /turf/closed/wall/r_wall/f13/vault, /turf/closed/wall)
 
 /turf/closed/wall/r_wall/f13
@@ -169,7 +169,7 @@
 	icon_state = "vaultrwall"
 	hardness = 230
 	explosion_block = 5
-	smooth = SMOOTH_OLD
+	smooth = SMOOTH_TRUE
 	canSmoothWith = list(/turf/closed/wall/f13/vault, /turf/closed/wall/r_wall/f13/vault, /turf/closed/wall)
 
 //Fallout 13 indestructible walls
@@ -192,6 +192,18 @@
 	icon_state = "matrix"
 	var/in_use = FALSE
 
+/mob/living/carbon/human/proc/despawn()
+	var/datum/job/job_to_free = SSjob.GetJob(job)
+	job_to_free?.current_positions--
+	GLOB.data_core.remove_record_by_name(real_name)
+	var/dat = "[key_name(src)] has despawned as [src], job [job], in [AREACOORD(src)]. Contents despawned along:"
+	for(var/i in contents)
+		var/atom/movable/content = i
+		dat += " [content.type]"
+	log_game(dat)
+	ghostize()
+	qdel(src)
+
 /turf/closed/indestructible/f13/matrix/MouseDrop_T(atom/dropping, mob/user)
 	. = ..()
 	if(!isliving(user) || user.incapacitated())
@@ -208,7 +220,7 @@
 		return
 	if(user.incapacitated() || QDELETED(departing_mob) || (departing_mob != user && departing_mob.client) || get_dist(src, dropping) > 2 || get_dist(src, user) > 2)
 		return //Things have changed since the alert happened.
-	if(departing_mob.logout_time && departing_mob.logout_time + 5 MINUTES > world.time)
+	if(departing_mob.logout_time && world.time < (departing_mob.logout_time + 5 MINUTES))
 		to_chat(user, span_warning("This mind has only recently departed. Better give it some more time before taking such a drastic measure."))
 		return
 	user.visible_message(span_warning("[user] [departing_mob == user ? "is trying to leave the wasteland!" : "is trying to send [departing_mob] away!"]"), span_notice("You [departing_mob == user ? "are trying to leave the wasteland." : "are trying to send [departing_mob] away."]"))

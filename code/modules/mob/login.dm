@@ -29,6 +29,9 @@
 	add_to_player_list()
 	lastKnownIP	= client.address
 	computer_id	= client.computer_id
+	// FALLOUT 13 EDIT
+	logout_time = 0
+	// END FALLOUT 13 EDIT
 	log_access("Mob Login: [key_name(src)] was assigned to a [type]")
 	world.update_status()
 	client.screen = list()				//remove hud items just in case

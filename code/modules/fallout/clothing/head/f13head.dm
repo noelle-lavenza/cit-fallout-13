@@ -263,16 +263,19 @@
 	set_light(0)
 
 
-/obj/item/clothing/head/helmet/f13/power_armor/mob_can_equip(mob/user, mob/equipper, slot, disable_warning = 1)
+/obj/item/clothing/head/helmet/f13/power_armor/mob_can_equip(mob/living/carbon/human/user, mob/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE, clothing_check = FALSE, list/return_warning)
 	var/mob/living/carbon/human/H = user
-	if(src == H.head) //Suit is already equipped
+	if(!istype(user))
+		return FALSE
+	if(src == user.head) //Suit is already equipped
 		return ..()
-	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == ITEM_SLOT_HEAD && requires_training)
-		to_chat(user, span_warning("You don't have the proper training to operate the power armor!"))
-		return 0
 	if(slot == ITEM_SLOT_HEAD)
+		if (!HAS_TRAIT(user, TRAIT_PA_WEAR) && requires_training)
+			if(return_warning)
+				return_warning[1] = span_warning("You don't have the proper training to operate [src]!")
+			return FALSE
 		return ..()
-	return
+	return FALSE
 
 /obj/item/clothing/suit/armor/f13/power_armor/emp_act(mob/living/carbon/human/owner, severity)
 	. = ..()
