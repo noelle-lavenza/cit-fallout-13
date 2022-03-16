@@ -1429,6 +1429,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			for(var/_V in all_quirks)
 				if(_V == quirk_name)
 					has_quirk = TRUE
+			if(initial(T.locked))
+				lock_reason = "This trait requires an item or role."
+				quirk_conflict = TRUE
 			if(initial(T.mood_quirk) && CONFIG_GET(flag/disable_human_mood))
 				lock_reason = "Mood is disabled."
 				quirk_conflict = TRUE

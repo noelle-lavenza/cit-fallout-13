@@ -14,6 +14,7 @@
 	var/infinite = FALSE
 	var/start_lit = FALSE
 	var/heats_space = TRUE
+	var/light_level = CANDLE_LUMINOSITY
 
 /obj/item/candle/Initialize()
 	. = ..()
@@ -43,7 +44,7 @@
 		lit = TRUE
 		if(show_message)
 			usr.visible_message(show_message)
-		set_light(CANDLE_LUMINOSITY)
+		set_light(light_level)
 		START_PROCESSING(SSobj, src)
 		update_icon()
 

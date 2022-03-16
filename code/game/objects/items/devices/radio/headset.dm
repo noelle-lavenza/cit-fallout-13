@@ -1,4 +1,6 @@
 // Used for translating channels to tokens on examination
+// SEE TELECOMMS_OVERRIDES.DM
+/*
 GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_COMMON = RADIO_KEY_COMMON,
 	RADIO_CHANNEL_SCIENCE = RADIO_TOKEN_SCIENCE,
@@ -13,6 +15,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	MODE_BINARY = MODE_TOKEN_BINARY,
 	RADIO_CHANNEL_AI_PRIVATE = RADIO_TOKEN_AI_PRIVATE
 ))
+*/
 
 /obj/item/radio/headset
 	name = "radio headset"
