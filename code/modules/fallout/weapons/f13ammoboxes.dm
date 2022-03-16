@@ -404,7 +404,7 @@
 
 //.50 BMG
 /obj/item/ammo_box/a50MG
-	name = "anti-materiel ammo rack (.50MG)"
+	name = "anti-material ammo rack (.50MG)"
 	desc = "A rack of .50 MG ammo, for when you really need something dead."
 	icon_state = "50mg"
 	caliber = "a50mg"
@@ -414,7 +414,7 @@
 	custom_materials = list(/datum/material/iron = 20000)
 
 /obj/item/ammo_box/a50MG/incendiary
-	name = "anti-materiel incendiary ammo rack (.50MG)"
+	name = "anti-material incendiary ammo rack (.50MG)"
 	desc = "A rack of .50 MG ammo, for when you really need something dead... and also on fire."
 	icon_state = "50in"
 	ammo_type = /obj/item/ammo_casing/a50MG/incendiary
@@ -423,7 +423,7 @@
 	custom_materials = list(/datum/material/iron = 40000)
 
 /*/obj/item/ammo_box/a50MG/AP
-	name = "anti-materiel armor piercing ammo rack (.50MG)"
+	name = "anti-material armor piercing ammo rack (.50MG)"
 	desc = "A rack of .50 MG ammo, for when you really need (a very big) something dead."
 	icon_state = "50ap"
 	ammo_type = /obj/item/ammo_casing/a50MG/AP
@@ -432,7 +432,7 @@
 	custom_materials = list(/datum/material/iron = 40000, /datum/material/glass = 50000)
 */
 /obj/item/ammo_box/a50MG/explosive
-	name = "anti-materiel explosive ammo rack (.50MG)"
+	name = "anti-material explosive ammo rack (.50MG)"
 	desc = "5 rounds of explosive .50 MG. More then enough to kill anything that moves."
 	icon_state = "50ex"
 	ammo_type = /obj/item/ammo_casing/a50MG/explosive
@@ -489,10 +489,11 @@
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "jerrycan"
 	caliber = "fuel"
-	unloadable = TRUE
 	ammo_type = /obj/item/ammo_casing/caseless/flamethrower
 	max_ammo = 6 // 3 bursts, you need 2 cans
 
+/obj/item/ammo_box/jerrycan/attack_self(mob/user)
+	return TRUE
 /obj/item/ammo_box/m22
 	name = "ammo box (.22lr)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'

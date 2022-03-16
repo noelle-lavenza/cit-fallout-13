@@ -4,7 +4,7 @@
 	name = "ammo cell template"
 	desc = "Bugreport please."
 	icon = 'icons/fallout/objects/powercells.dmi'
-	cancharge = 0
+	chargerate = 0 // you can put it in a charger, it'll just not charge
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/stock_parts/cell/ammo/update_icon()

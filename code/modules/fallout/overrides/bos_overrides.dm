@@ -26,3 +26,18 @@
 /obj/item/circuitboard/computer/bos
 	name = "Brotherhood Monitor (Computer Board)"
 	build_path = /obj/machinery/computer/security/bos
+
+/obj/machinery/computer/rdconsole/core/bos
+	desc = "A console used by the scribes of the Brotherhood of Steel."
+	name = "Archive Terminal"
+	circuit = /obj/item/circuitboard/computer/rdconsole/bos
+	req_access = null
+	req_access_txt = "120"
+
+//lettern's lazy way of adding more channels
+/obj/machinery/computer/rdconsole/core/bos/Initialize()
+	. = ..()
+	stored_research = SSresearch.bos_tech //lettern, note about this
+	stored_research.consoles_accessing[src] = TRUE
+	matching_design_ids = list()
+	SyncRDevices()

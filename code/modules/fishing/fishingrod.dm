@@ -11,7 +11,7 @@ GLOBAL_LIST_INIT(fish_rates, list(
 /obj/item/fishingrod
 	name = "fishing rod"
 	desc = "A long pole that was once used to capture mighty beasts from the sea."
-	icon = 'icons/obj/fish/fish_items.dmi'
+	icon = 'icons/fishing/fish_items.dmi'
 	icon_state = "fishingrod"
 	//this is for checking
 	var/mob/current_user
@@ -55,19 +55,19 @@ GLOBAL_LIST_INIT(fish_rates, list(
 	if(!istype(target, /turf/open/water) && !istype(target, /turf/open/indestructible/ground/outside/water))
 		return ..()
 	if(!(target in range(fish_range, user)))
-		to_chat(current_user, SPAN_WARNING("The line cannot reach that far, move closer!"))
+		to_chat(current_user, span_warning("The line cannot reach that far, move closer!"))
 		return
 	if(inuse)
 		if(current_wait <= world.time && world.time <= current_waitfail)
 			var/fish_result = complete_fishing()
 			switch(fish_result)
 				if(1)
-					to_chat(current_user, SPAN_WARNING("You got trash, lame..."))
+					to_chat(current_user, span_warning("You got trash, lame..."))
 				if(2)
-					to_chat(current_user, SPAN_WARNING("You got nothing, lame..."))
+					to_chat(current_user, span_warning("You got nothing, lame..."))
 				if(3)
 					to_chat(current_user, "<span class='green'>You got a fish, nice!</span>")
-		to_chat(current_user, SPAN_NOTICE("You pull back your line!"))
+		to_chat(current_user, span_notice("You pull back your line!"))
 		inuse = FALSE
 		return //yea, we aren't terraria with a fishing rod that has multiple lines
 	inuse = TRUE
@@ -75,7 +75,7 @@ GLOBAL_LIST_INIT(fish_rates, list(
 	addtimer(CALLBACK(src, .proc/play_readysound), random_fishtime)
 	current_wait = world.time + random_fishtime
 	current_waitfail = current_wait + max_afterfish
-	to_chat(current_user, SPAN_NOTICE("You cast your fishing line, get ready to reel it back in!"))
+	to_chat(current_user, span_notice("You cast your fishing line, get ready to reel it back in!"))
 	current_turf = get_turf(current_user)
 
 /obj/item/fishingrod/proc/falsify_inuse()
@@ -98,7 +98,7 @@ GLOBAL_LIST_INIT(fish_rates, list(
 				new /obj/item/salvage/low(current_turf)
 				if(prob(5))
 					new /obj/item/salvage/high(current_turf)
-				return 1			
+				return 1
 			return 2
 		if(TRUE)
 			var/pick_fish = pickweight(GLOB.fish_rates) //add your in the global list

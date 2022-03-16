@@ -179,10 +179,6 @@
 		return heal_carbon(M, user, heal_brute, heal_burn)
 	return ..()
 
-/obj/item/stack/medical/mourning/post_heal_effects(amount_healed, mob/living/carbon/healed_mob, mob/user)
-	. = ..()
-	healed_mob.adjustOxyLoss(amount_healed)
-
 //OBSOLETE replace with /mourning, waiting on Tipton for this one too
 /obj/item/stack/medical/poultice/ten
 	amount = 10

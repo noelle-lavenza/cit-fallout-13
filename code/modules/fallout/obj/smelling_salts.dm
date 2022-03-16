@@ -100,7 +100,7 @@
 	if(time_since_death > time_limit)
 		revived_mob.adjustOrganLoss(ORGAN_SLOT_BRAIN, max(0, min(99, ((time_limit - time_since_death) / time_limit * 100))), 150)
 	log_combat(revived_mob, revived_mob, "revived", src)
-	var/list/policies = CONFIG_GET(keyed_list/policyconfig)
+	var/list/policies = CONFIG_GET(keyed_list/policy)
 	var/memory_limit = CONFIG_GET(number/defib_cmd_time_limit)
 	var/late = memory_limit && (time_since_death > memory_limit)
 	var/policy = late? policies[POLICYCONFIG_ON_DEFIB_LATE] : policies[POLICYCONFIG_ON_DEFIB_INTACT]

@@ -2,7 +2,7 @@
 /obj/item/fishy
 	name = "parent fish"
 	desc = "debug, report to Jake"
-	icon = 'icons/obj/fish/fish_items.dmi'
+	icon = 'icons/fishing/fish_items.dmi'
 	//the type of meat it drops
 	var/meat_type
 	//the max primary meat it drops
@@ -23,10 +23,10 @@
 //butchering and other attack stuff goes here
 /obj/item/fishy/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/kitchen/knife))
-		to_chat(user, SPAN_NOTICE("You begin to butcher [src]..."))
+		to_chat(user, span_notice("You begin to butcher [src]..."))
 		playsound(user.loc, 'sound/effects/butcher.ogg', 50, TRUE, -1)
 		if(!do_after(user, 3 SECONDS, target = src))
-			to_chat(user, SPAN_NOTICE("You stop trying to butcher [src]..."))
+			to_chat(user, span_notice("You stop trying to butcher [src]..."))
 			return
 		if(meat_type)
 			var/turf/meat_turf = get_turf(src)
@@ -37,7 +37,7 @@
 			for(var/i in 1 to rand(1, max_secondary))
 				if(prob(secondary_chance))
 					new secondary_drop(second_turf)
-		to_chat(user, SPAN_NOTICE("You successfully butchered [src]."))
+		to_chat(user, span_notice("You successfully butchered [src]."))
 		qdel(src)
 		return
 	else
@@ -103,8 +103,8 @@
 /obj/item/fishyegg
 	name = "parent fish egg"
 	desc = "debug, report to coders (or jake) if you see this."
-	icon = 'icons/obj/fish/fish_items.dmi'
-	grind_results = list(/datum/reagent/nutracid = 1)
+	icon = 'icons/fishing/fish_items.dmi'
+// 	grind_results = list(/datum/reagent/nutracid = 1) // what the fuck is nutracid
 
 /obj/item/fishyegg/carp
 	name = "carp fish egg"

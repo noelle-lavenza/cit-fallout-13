@@ -17,3 +17,14 @@
 /obj/item/circuitboard/computer/rdconsole/followers
 	name = "R&D Console (Computer Board)"
 	build_path = /obj/machinery/computer/rdconsole/core/followers
+
+
+/obj/machinery/computer/rdconsole/core/followers
+	circuit = /obj/item/circuitboard/computer/rdconsole/followers
+
+/obj/machinery/computer/rdconsole/core/followers/Initialize()
+	. = ..()
+	stored_research = SSresearch.followers_tech
+	stored_research.consoles_accessing[src] = TRUE
+	matching_design_ids = list()
+	SyncRDevices()

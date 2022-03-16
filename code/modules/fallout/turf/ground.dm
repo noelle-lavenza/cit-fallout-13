@@ -65,7 +65,7 @@
 //	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
 //	/obj/item/seeds/feracactus, /obj/item/seeds/corn,/obj/item/seeds/shroom, /obj/item/seeds/agave)
 	slowdown = 0.5
-	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
+	flags_1 = CAN_HAVE_NATURE
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND

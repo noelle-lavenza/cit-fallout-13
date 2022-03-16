@@ -70,7 +70,7 @@
 			spread = 11
 			fire_delay += 1
 			recoil = 0.1
-			extra_damage = -1
+//			extra_damage = -1
 			to_chat(user, span_notice("You switch to [burst_size]-rnd burst."))
 		if(1)
 			select = 0
@@ -78,7 +78,7 @@
 			spread += 11
 			fire_delay += 1
 			recoil = 0.25
-			extra_damage = -2
+//			extra_damage = -2
 			to_chat(user, span_notice("You switch to [burst_size]-rnd burst."))
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
@@ -223,7 +223,7 @@
 			select = 0
 			burst_size = 1
 			recoil = 0.1
-			extra_damage = 3
+//			extra_damage = 3
 			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, span_notice("You switch to semi-auto."))
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -300,7 +300,7 @@
 			spread = 8
 			fire_delay = 3.5
 			recoil = 0.3
-			extra_damage = 2
+//			extra_damage = 2
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, span_notice("You switch to automatic fire in short bursts."))
 		if(1)
@@ -309,7 +309,7 @@
 			spread = 14
 			fire_delay = 4.5
 			recoil = 0.5
-			extra_damage = 0
+//			extra_damage = 0
 			weapon_weight = WEAPON_HEAVY
 			to_chat(user, span_notice("You switch to automatic fire in long bursts.."))
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -591,8 +591,8 @@
 	fire_delay = 4
 	burst_size = 1
 //	en_bloc = 1
-	auto_eject = 1
-	auto_eject_sound = 'sound/f13weapons/garand_ping.ogg'
+//	auto_eject = 1
+//	auto_eject_sound = 'sound/f13weapons/garand_ping.ogg'
 	can_bayonet = TRUE
 //	bayonet_state = "lasmusket"
 	knife_x_offset = 22
@@ -951,7 +951,7 @@
 		if(0)
 			select += 1
 			burst_size = 2
-			extra_damage = 0
+//			extra_damage = 0
 			spread = 4
 			fire_delay = 5
 			recoil = 0.2
@@ -959,7 +959,7 @@
 		if(1)
 			select = 0
 			burst_size = 1
-			extra_damage = 3
+//			extra_damage = 3
 			spread = 0
 			fire_delay = 4
 			recoil= 0.1
@@ -1041,14 +1041,14 @@
 			select += 1
 			burst_size = 2
 			spread = 15
-			extra_damage = -1
+//			extra_damage = -1
 			recoil = 0.25
 			to_chat(user, span_notice("You switch to firing in small bursts."))
 		if(1)
 			select = 0
 			burst_size = 3
 			spread = 20
-			extra_damage = -2
+//			extra_damage = -2
 			recoil = 0.5
 			to_chat(user, span_notice("You switch to full auto."))
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1082,14 +1082,14 @@
 			select = 0
 			burst_size = 2
 			spread = 6
-			extra_damage = 0
+//			extra_damage = 0
 			recoil = 0.25
 			to_chat(user, span_notice("You switch to firing in small-bursts."))
 		if(1)
 			select += 1
 			burst_size = 3
 			spread = 10
-			extra_damage = -1
+//			extra_damage = -1
 			recoil = 0.5
 			to_chat(user, span_notice("You switch to full auto."))
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
@@ -1172,14 +1172,14 @@
 			select += 1
 			burst_size = 2
 			spread = 40
-			extra_damage = -5
+//			extra_damage = -5
 			recoil = 0.5
 			to_chat(user, span_notice("You switch to burst fire."))
 		if(1)
 			select = 0
 			burst_size = 4
 			spread = 60
-			extra_damage = -10
+//			extra_damage = -10
 			recoil = 1
 			to_chat(user, span_notice("You switch to full auto."))
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)

@@ -19,7 +19,7 @@
 	density = TRUE
 	max_integrity = 100
 	proj_pass_rate = 50 //How many projectiles will pass the cover. Lower means stronger cover
-	var/bar_material = METAL
+	bar_material = METAL
 	var/can_build = TRUE
 
 /obj/structure/barricade/deconstruct(disassembled = TRUE)
@@ -105,32 +105,12 @@
 /////////////////////////
 /// WOODEN BARRICADES ///
 /////////////////////////
-
-/obj/structure/barricade/wooden
-	name = "wooden barricade"
-	desc = "This space is blocked off by a wooden barricade."
-	icon_state = "woodenbarricade"
-	bar_material = WOOD
-	var/drop_amount = 3
-
-/obj/structure/barricade/wooden/make_debris()
-	new /obj/item/stack/sheet/mineral/wood(get_turf(src), drop_amount)
-
 /obj/structure/barricade/wooden/strong
 	name = "strong wooden barricade"
 	desc = "This space is blocked off by a strong wooden barricade."
 	obj_integrity = 300
 	max_integrity = 300
 	proj_pass_rate = 30
-	can_build = FALSE
-
-/obj/structure/barricade/wooden/crude
-	name = "crude plank barricade"
-	desc = "This space is blocked off by a crude assortment of planks."
-	icon_state = "woodenbarricade-old"
-	drop_amount = 1
-	max_integrity = 50
-	proj_pass_rate = 65
 	can_build = FALSE
 
 /obj/structure/barricade/wooden/crude/snow

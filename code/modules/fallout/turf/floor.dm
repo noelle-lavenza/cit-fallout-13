@@ -13,7 +13,7 @@
 
 /turf/open/floor/f13/wood
 	icon_state = "housewood1" // for map preview
-	var/base_icon_state = "housewood"
+	base_icon_state = "housewood"
 	var/num_variants = 4
 	icon = 'icons/fallout/turfs/ground.dmi'
 	floor_tile = /obj/item/stack/tile/wood

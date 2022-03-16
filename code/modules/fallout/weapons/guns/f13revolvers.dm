@@ -155,16 +155,16 @@
 			select += 1
 			burst_size = 3 //fan the hammer
 			spread = 15
-			extra_damage = 0
-			extra_penetration = 0
+//			extra_damage = 0
+//			extra_penetration = 0
 			fire_delay = 1
 			to_chat(user, span_notice("You prepare to fan the hammer for a rapid burst of shots."))
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 0
-			extra_damage = 15
-			extra_penetration = 0.1
+//			extra_damage = 15
+//			extra_penetration = 0.1
 			to_chat(user, span_notice("You switch to single-shot fire."))
 	update_icon()
 */
@@ -254,3 +254,34 @@
 	fire_delay = 3.5
 	weapon_weight = WEAPON_MEDIUM
 	spread = 40
+
+/////////////////////////////
+//   IMPROVISED GUNS	   //
+/////////////////////////////
+
+//Zipgun					Keywords: IMPROVISED, 9mm, mag-loaded
+/obj/item/gun/ballistic/revolver/zipgun
+	name = "zipgun"
+	desc = "A crudely-made 9mm pistol. You're not sure this thing is reliable."
+	icon_state = "zipgun"
+	item_state = "gun"
+	fire_sound = 'sound/weapons/Gunshot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvised9mm
+	spread = 20
+
+//Pipe Rifle				Keywords: IMPROVISED, 10mm, interal loader, single-shot
+/obj/item/gun/ballistic/revolver/pipe_rifle
+	name = "pipe rifle"
+	desc = "A crudely-made 10mm rifle. It's not very accurate."
+	icon_state = "pipe_rifle"
+	item_state = "improvshotgun"
+	fire_sound = 'sound/weapons/Gunshot.ogg'
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvised10mm
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	spread = 15
+
+/obj/item/gun/ballistic/revolver/pipe_rifle/attackby(obj/item/A, mob/user, params)
+	..()
+	if(A.tool_behaviour == TOOL_SAW || istype(A, /obj/item/gun/energy/plasmacutter))
+		sawoff(user)

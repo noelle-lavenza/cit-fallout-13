@@ -14,7 +14,7 @@
 	density = TRUE
 	obj_integrity = 90
 	max_integrity = 90
-	proj_pass_rate = 90
+	pass_flags = LETPASSTHROW
 
 /obj/structure/obstacle/tirepile
 	name = "large pile of car tires"
@@ -41,7 +41,6 @@
 	opacity = TRUE
 	obj_integrity = 150
 	max_integrity = 150
-	proj_pass_rate = null
 
 /obj/structure/obstacle/jammed_door
 	name = "jammed secure door"
@@ -51,7 +50,6 @@
 	max_integrity = 800
 	climbable = TRUE
 	opacity = FALSE
-	proj_pass_rate = 20
 
 
 /////////////////
