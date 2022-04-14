@@ -9,9 +9,7 @@ Coven Stuff
 	faction = "Coven"
 	total_positions = 0
 	spawn_positions = 0
-	description = "You are a Witch of the Iron Coven. As the Witch you answer directly to the Exalted and the Matriarchs. The commanding officer in this region is a Matriarch by the name of The Harbinger. Circumstances may change the identity of the local commanding officer, but you will forevermore answer to the bidding of any and all Matriarchs. You are the equivilent of a Brotherhood Knight in rank, but your role has changed in the century since your people betrayed the Brotherhood of Steel. Witches are the primary military force of your organization. From far away to the east, in Dallas, New Orleans, and the sprawling metropolis that is Miami, you have come to do the bidding of the Grand Matriarch, your holy leader. She orders that the people of this region, like any other, be subjugated to her will. Your job is to organize missions to subvert the power of the local factions, spread scripture, protect and recruit citizens, and disperse technology to the people. The Matriarchs of the Coven have given you the permission to recruit and command your own squad, given that they eventually submit to the Iron Church's FEV treatment. You spread the scripture of the Iron Codex, you distribute technology to the masses and though you are in open war with the people of this area, it is your sworn duty to preserve all life in the name of fulfilling the Prophecy. All lives lost are a tragedy. In the eyes of your superiors, all deserve a chance to bask in the shadow of the Void."
-	forbids = ""
-	enforces = ""
+	custom_spawn_text = "You are a Witch of the Iron Coven. As the Witch you answer directly to the Exalted and the Matriarchs. The commanding officer in this region is a Matriarch by the name of The Harbinger. Circumstances may change the identity of the local commanding officer, but you will forevermore answer to the bidding of any and all Matriarchs. You are the equivilent of a Brotherhood Knight in rank, but your role has changed in the century since your people betrayed the Brotherhood of Steel. Witches are the primary military force of your organization. From far away to the east, in Dallas, New Orleans, and the sprawling metropolis that is Miami, you have come to do the bidding of the Grand Matriarch, your holy leader. She orders that the people of this region, like any other, be subjugated to her will. Your job is to organize missions to subvert the power of the local factions, spread scripture, protect and recruit citizens, and disperse technology to the people. The Matriarchs of the Coven have given you the permission to recruit and command your own squad, given that they eventually submit to the Iron Church's FEV treatment. You spread the scripture of the Iron Codex, you distribute technology to the masses and though you are in open war with the people of this area, it is your sworn duty to preserve all life in the name of fulfilling the Prophecy. All lives lost are a tragedy. In the eyes of your superiors, all deserve a chance to bask in the shadow of the Void."
 	supervisors = "Exalted and the Matriarchs."
 	selection_color = "#95a5a6"
 
@@ -50,7 +48,7 @@ Great Khans
 	faction = "Wastelander"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the Genghis Khan. One of the Sonoran Khan gang Leaders. You've put your time in and have shown you're not an idiot and can be trusted. You can lead, you understand how things are around here, you're not some run of the mill Khan hustling for pocket change and pussy.. You've earned your strips. You put blood down for the Khans. Your job is to keep your family safe, LEAD them and show them how we roll. Show them what it means to be a fucking Khan."
+	custom_spawn_text = "You are the Genghis Khan. One of the Sonoran Khan gang Leaders. You've put your time in and have shown you're not an idiot and can be trusted. You can lead, you understand how things are around here, you're not some run of the mill Khan hustling for pocket change and pussy.. You've earned your strips. You put blood down for the Khans. Your job is to keep your family safe, LEAD them and show them how we roll. Show them what it means to be a fucking Khan."
 	supervisors = "Your pride"
 	selection_color = "#f86a29"
 	req_admin_notify = 1
@@ -139,7 +137,7 @@ Great Khans
 	faction = "Wastelander"
 	total_positions = 5
 	spawn_positions = 5
-	description = "You are no common raider or tribal settler, for you are a Great Khan. Your ancestry is that of fierce warriors and noble chieftans, whose rites and sagas tell of blood soaked battlefields and great sacrifice for your tribe. At least, this was once the case: after the massacre at Bitter Springs by the NCR, your people have lost much of their strength - now you and many other Khans travel west of Vegas through Red Rock Canyon in the hopes of settling in the region of Yuma."
+	custom_spawn_text = "You are no common raider or tribal settler, for you are a Great Khan. Your ancestry is that of fierce warriors and noble chieftans, whose rites and sagas tell of blood soaked battlefields and great sacrifice for your tribe. At least, this was once the case: after the massacre at Bitter Springs by the NCR, your people have lost much of their strength - now you and many other Khans travel west of Vegas through Red Rock Canyon in the hopes of settling in the region of Yuma."
 	supervisors = "your gang leadership"
 	selection_color = "#ff915e"
 	exp_requirements = 1800
@@ -232,10 +230,9 @@ Bandit
 	department_head = list("Captain")
 	head_announce = list("Security")
 	faction = "Wastelander"
-	social_faction = "Raiders"
 	total_positions = 15
 	spawn_positions = 15
-	description = "You are a low-level delinquent with a proclivity for malice, scrounging by for more caps, food and other necessities in the cruel wasteland.  You haven’t quite gained the reputation, contacts and skills to call yourself an Outlaw, so it would be in your best interest to follow their lead to create a superior force – there is a reason they made it so far, and they can help you move up the food chain. You are responsible for causing conflict and strife, you are a simple criminal who engages in nefarious shenanigans which make the wasteland more dangerous; however, you still have a responsibility to make your time here interesting, fun, and engaging for others - this means that whatever path you pursue should be more nuanced and flavorful than simple killing for the sake of it. You are expected to have a high level of roleplay, be OK with losing, and to not take things personally or you may lose the privilege to play this occupation. Treat this role as a first stepping stone to Antagonism, don’t be afraid to try things out, as long as you try to generate fun conflict while minding the rules you are doing everything right. Performing well as a Bandit is a great way to show you're capable of stepping up to the next level... And remember, losing is fun!"
+	custom_spawn_text = "You are a low-level delinquent with a proclivity for malice, scrounging by for more caps, food and other necessities in the cruel wasteland.  You haven’t quite gained the reputation, contacts and skills to call yourself an Outlaw, so it would be in your best interest to follow their lead to create a superior force – there is a reason they made it so far, and they can help you move up the food chain. You are responsible for causing conflict and strife, you are a simple criminal who engages in nefarious shenanigans which make the wasteland more dangerous; however, you still have a responsibility to make your time here interesting, fun, and engaging for others - this means that whatever path you pursue should be more nuanced and flavorful than simple killing for the sake of it. You are expected to have a high level of roleplay, be OK with losing, and to not take things personally or you may lose the privilege to play this occupation. Treat this role as a first stepping stone to Antagonism, don’t be afraid to try things out, as long as you try to generate fun conflict while minding the rules you are doing everything right. Performing well as a Bandit is a great way to show you're capable of stepping up to the next level... And remember, losing is fun!"
 	supervisors = "Your desire to make things interesting and fun"
 	selection_color = "#ff4747"
 	exp_requirements = 1800
@@ -301,7 +298,6 @@ Bandit
 	if(visualsOnly)
 		return
 
-	H.social_faction = "Raiders"
 	H.verbs |= /mob/living/proc/creategang
 
 /datum/outfit/loadout/banfiend
@@ -341,7 +337,7 @@ Outlaw
 	social_faction = "Raiders"
 	total_positions = 15
 	spawn_positions = 15
-	description = "You are an undesirable figure of some kind- perhaps a corrupt official, or a cannibalistic bartender, or a devious conman, to name a few examples. You have more freedom than anyone else in the wastes, and are not bound by the same moral code as others, but though you may only be interested in self-gain, you still have a responsibility to make your time here interesting, fun, and engaging for others- this means that whatever path you pursue should be more nuanced and flavorful than simple highway robbery or slavery. (Adminhelp if you require help setting up your character for the round.)"
+	custom_spawn_text = "You are an undesirable figure of some kind- perhaps a corrupt official, or a cannibalistic bartender, or a devious conman, to name a few examples. You have more freedom than anyone else in the wastes, and are not bound by the same moral code as others, but though you may only be interested in self-gain, you still have a responsibility to make your time here interesting, fun, and engaging for others- this means that whatever path you pursue should be more nuanced and flavorful than simple highway robbery or slavery. (Adminhelp if you require help setting up your character for the round.)"
 	supervisors = "Your desire to make things interesting and fun"
 	selection_color = "#ff4747"
 
@@ -618,7 +614,7 @@ Outlaw
 	faction = "Wastelander"
 	total_positions = -1
 	spawn_positions = -1
-	description = "You may have come from near or far to reach the Arizona border region once known as Yuma, and the Sonoran Desert may have burnt your skin. With Cog City to the southeast in between the NCR and Legion border, and Brotherhood and raider presence, your trials may be many more still. Though your past might be set in stone, the future is in your hands."
+	custom_spawn_text = "You may have come from near or far to reach the Arizona border region once known as Yuma, and the Sonoran Desert may have burnt your skin. With Cog City to the southeast in between the NCR and Legion border, and Brotherhood and raider presence, your trials may be many more still. Though your past might be set in stone, the future is in your hands."
 	supervisors = "no one"
 	selection_color = "#dddddd"
 
@@ -914,7 +910,7 @@ Outlaw
 	faction = "Wastelander"
 	total_positions = -1
 	spawn_positions = -1
-	description = "You come from far away land and or even you are from here from one of the local tribes."
+	custom_spawn_text = "You come from far away land and or even you are from here from one of the local tribes."
 	supervisors = "no one or the stars above"
 	selection_color = "#dddddd"
 	outfit = /datum/outfit/job/wasteland/f13tribal

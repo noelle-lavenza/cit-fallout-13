@@ -151,7 +151,7 @@
 	w_class = 4
 
 	layer = 4.1
-	icon = 'icons/obj/flags.dmi'
+	icon = 'icons/fallout/objects/flags.dmi'
 	icon_state = "emptyflag"
 	item_state = "emptyflag"
 	var/faction = null
@@ -289,10 +289,11 @@
 	w_class = WEIGHT_CLASS_BULKY
 	attack_verb = list("bashed")
 
+/* // TODO - CONVERT TO USE MARKINGS
 /obj/item/warpaint_bowl
 	name = "warpaint bowl"
 	desc = "A small ceramic bowl, used for the mixing of warpaints by a skilled shaman."
-	icon = 'icons/mob/tribe_warpaint.dmi'
+	icon = 'icons/fallout/mobs/tribe_warpaint.dmi'
 	icon_state = "wp_bowl"
 	/// List of choosable warpaint icon states.
 	var/static/list/choices = list(
@@ -337,3 +338,4 @@
 	H.warpaint = paint_type
 	H.warpaint_color = paint_color
 	H.update_body()
+*/

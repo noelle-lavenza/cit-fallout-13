@@ -1,7 +1,5 @@
 /datum/job/tribals //do NOT use this for anything, it's just to store faction datums
 	selection_color = "#ffeeaa"
-	forbids = "The use of pre-war technology, especially prewar weapons of war."
-	enforces = "The tribe operate as if they are a part of a singular clan. Any harm dealt upon another member is likened to harm placed upon your brother or sister. Above all things, the tribe comes first."
 	objectivesList = list("The village elders suggest the following goal for this week: Recruit worthy outlanders into the tribe and teach them of Yabhat","The village elders suggest the following goal for this week: Hunt dangerous creatures to improve the clan's standing","The village elders suggest the following goal for this week: Throw a generous feast for the tribe and invite friendly outsiders to partake in the blessing of Ghostis")
 
 /datum/outfit/job/tribal/
@@ -52,9 +50,7 @@ Tribal Chief
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "The Elders of the tribe."
-	enforces = "The ways of the Machine spirits."
-	forbids = "Abusing technology and using Pre-War weapons."
-	description = "The leader and central political figure in the Wayfarer Tribe. You engage in diplomatic meetings with the powers present within the Region to ensure the village's safety and independence."
+	custom_spawn_text = "The leader and central political figure in the Wayfarer Tribe. You engage in diplomatic meetings with the powers present within the Region to ensure the village's safety and independence."
 	selection_color = "#006666"
 	outfit = /datum/outfit/job/tribal/f13chief
 
@@ -104,9 +100,7 @@ Tribal Shaman
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "The Elders of the tribe and the chief."
-	enforces = "The ways of the Machine spirits."
-	forbids = "Abusing technology and using Pre-War weapons."
-	description = "The spiritual leader and cultural core of the Wayfarer Tribe. You aid villagers in their day to day lives by offering guidance and advice, while also acting as the direct aid to the chief. You are the guardian of the tribe's customs, their health, and knowledge."
+	custom_spawn_text = "The spiritual leader and cultural core of the Wayfarer Tribe. You aid villagers in their day to day lives by offering guidance and advice, while also acting as the direct aid to the chief. You are the guardian of the tribe's customs, their health, and knowledge."
 	selection_color = "#006666"
 
 	outfit = /datum/outfit/job/tribal/f13shaman
@@ -166,9 +160,7 @@ Tribal Head Hunter
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "The Elders of the tribe and the chief."
-	enforces = "The ways of the Machine spirits."
-	forbids = "Abusing technology and using Pre-War weapons."
-	description = "You are the village Head Hunter; you organize the hunters of the tribe and are the authority in matters of protecting the tribe and the land of the Wayfarers. You lead the Great Hunts and War-Bands in time of conflict."
+	custom_spawn_text = "You are the village Head Hunter; you organize the hunters of the tribe and are the authority in matters of protecting the tribe and the land of the Wayfarers. You lead the Great Hunts and War-Bands in time of conflict."
 	selection_color = "#006666"
 
 	outfit = /datum/outfit/job/tribal/f13Hhunter
@@ -189,7 +181,7 @@ Tribal Head Hunter
 	suit = 			/obj/item/clothing/suit/hooded/f13/cloak/hhunter
 	suit_store =	/obj/item/melee/transforming/cleaving_saw
 	belt = 			/obj/item/storage/belt/mining/primitive
-	l_pocket =		/obj/item/flashlight/lantern	
+	l_pocket =		/obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola=1,
 		/obj/item/reagent_containers/pill/patch/f13/healingpowder=2,
@@ -205,9 +197,7 @@ Druid
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "The Chief and the Shaman."
-	enforces = "The ways of the Machine spirits."
-	forbids = "Abusing technology and using Pre-War weapons."
-	description = "You are a Druid in the tribe; you perform rituals, and bless pre-war relics and other artifacts for the tribe to use. You also are the spiritual guides of the tribe, and work with the Shaman during rituals or other spiritual matters."
+	custom_spawn_text = "You are a Druid in the tribe; you perform rituals, and bless pre-war relics and other artifacts for the tribe to use. You also are the spiritual guides of the tribe, and work with the Shaman during rituals or other spiritual matters."
 	selection_color = "#006666"
 	exp_requirements = 600
 	exp_type = EXP_TYPE_TRIBAL
@@ -278,7 +268,7 @@ Villager
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "Tribal Chief, Shaman and Headhunter"
-	description = "A proud member of the Wayfarer tribe, you do what needs to be done to ensure the survival of yourself and your people while following the laws of the tribe."
+	custom_spawn_text = "A proud member of the Wayfarer tribe, you do what needs to be done to ensure the survival of yourself and your people while following the laws of the tribe."
 	selection_color = "#006666"
 
 	outfit = /datum/outfit/job/tribal/f13villager
@@ -356,9 +346,7 @@ Hunter
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "The chief and Head Hunter."
-	enforces = "The ways of the Machine spirits."
-	forbids = "Abusing technology and using Pre-War weapons."
-	description = "You are a Hunter for the tribe; you bring back food and relics, anything that may house a machine spirit that can be purified by the shaman. You also are the protectors of the tribe, and work with the Head Hunter during Great Hunts or times of War."
+	custom_spawn_text = "You are a Hunter for the tribe; you bring back food and relics, anything that may house a machine spirit that can be purified by the shaman. You also are the protectors of the tribe, and work with the Head Hunter during Great Hunts or times of War."
 	selection_color = "#006666"
 
 	exp_requirements = 600
@@ -422,7 +410,7 @@ Spirit-Pledged
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "All other tribals."
-	description = "An outsider to the tribe, you have been welcomed to learn their ways and grow closer to their culture and lifestyle."
+	custom_spawn_text = "An outsider to the tribe, you have been welcomed to learn their ways and grow closer to their culture and lifestyle."
 	selection_color = "#006666"
 
 	outfit = /datum/outfit/job/tribal/f13spiritpledged

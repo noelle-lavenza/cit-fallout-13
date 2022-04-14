@@ -3,7 +3,7 @@
 /obj/structure/table/wood/settler
 	desc = "A wooden table constructed by a carpentering amateur from various planks.<br>It's the work of wasteland settler."
 	icon_state = "settlertable"
-	icon = 'icons/obj/smooth_structures/wood_table_settler.dmi'
+	icon = 'icons/fallout/objects/smooth_structures/wood_table_settler.dmi'
 	obj_integrity = 50
 	max_integrity = 50
 	canSmoothWith = list(/obj/structure/table/wood/settler)
@@ -11,7 +11,7 @@
 /obj/structure/table/booth
 	name = "booth table"
 	desc = "A diner style booth table."
-	icon = 'icons/obj/smooth_structures/booth_table.dmi'
+	icon = 'icons/fallout/objects/smooth_structures/booth_table.dmi'
 	icon_state = "boothtable"
 	flags_1 = NODECONSTRUCT_1
 	canSmoothWith = list(/obj/structure/table/booth)
@@ -36,7 +36,7 @@
 /obj/structure/table/snooker
 	name = "pool table"
 	desc = "A cloth surfaced pool table for that bar themed aesthetic! Bring over the brews! Pool not included."
-	icon = 'icons/obj/structures.dmi'
+	icon = 'icons/fallout/objects/structures/tables.dmi'
 	icon_state = "nv_pooltable"
 	anchored = TRUE
 	framestack = /obj/item/stack/sheet/mineral/wood

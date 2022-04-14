@@ -7,9 +7,9 @@
 /obj/item/gun/ballistic/automatic/smg/
 	name = "SMG TEMPLATE"
 	desc = "should not exist"
-	icon = 'icons/obj/guns/projectile.dmi'
-	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
+	icon = 'icons/fallout/objects/guns/projectile.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY //Automatic fire and onehanded use mix poorly.
 	automatic_burst_overlay = TRUE
@@ -406,7 +406,7 @@
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
 	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
-	icon = 'icons/obj/guns/ballistic/service_rifle.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/service_rifle.dmi'
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
@@ -434,7 +434,7 @@
 /obj/item/gun/ballistic/automatic/combat
 	name = "Combat Rifle"
 	desc = "A .45 semi-automatic combat rifle, produced pre-war for National Guard forces."
-	icon = 'icons/obj/guns/ballistic/combat_rifle.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/combat_rifle.dmi'
 	icon_state = "combat_rifle"
 	item_state = "R82"
 	fire_sound = 'sound/f13weapons/combatrifle.ogg'
@@ -686,7 +686,7 @@
 /obj/item/gun/ballistic/automatic/assault_rifle
 	name = "R91 assault rifle"
 	desc = "A standard R91 assault rifle, out of use around the time of the Great War."
-	icon = 'icons/obj/guns/ballistic/r91.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/r91.dmi'
 	icon_state = "r91"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
@@ -711,7 +711,7 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
 	name = "Infiltrator"
 	desc = "An incredibly rare and customized R91 assault rifle, with an integrated suppressor, cut down stock and polymer furniture. Built for the perfect assassination machine!"
-	icon = 'icons/obj/guns/ballistic/infl.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/infl.dmi'
 	icon_state = "infiltrator"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
@@ -741,7 +741,7 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/ncr
 	name = "NCR assault carbine"
 	desc = "An assault carbine but with a reinforced stock and scrapped together polymer to it adorned with an NCR flag wrapped around the rifle's butt."
-	icon = 'icons/obj/guns/ballistic/r91.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/r91.dmi'
 	icon_state = "r91_ncr"
 	fire_delay = 5
 	burst_shot_delay = 2.2
@@ -759,7 +759,7 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/legion
 	name = "'Pilum' assault rifle"
 	desc = "What was a perfectly good assault carbine has found itself in a somewhat mutilated state but reinforced with wood furnishing. The gun now sports its new colors and banner well; serving its purpose as an elite gun among Ceasar's ranks."
-	icon = 'icons/obj/guns/ballistic/r91.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/r91.dmi'
 	icon_state = "r91_legion"
 	spread = 6
 	fire_delay = 3.5
@@ -797,7 +797,7 @@
 	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
 	icon_state = "type93"
 	item_state = "handmade_rifle"
-	icon = 'icons/obj/guns/ballistic/type93.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/type93.dmi'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	can_suppress = TRUE
@@ -867,7 +867,7 @@
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
 	desc = "The U.S. army assault carbine is a paratrooper desginated rifle spread among the ranks prior to the Great War. These rifles are commonly found alongside U.S Army and U.S Airforce bases."
-	icon = 'icons/obj/guns/ballistic/assault_carbine.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/assault_carbine.dmi'
 	icon_state = "assault_carbine"
 	item_state = "assault_carbine"
 	slot_flags = 0
@@ -900,7 +900,7 @@
 	desc = "The AK-112 assault rifle was in standard service in the 21st century but found itself replaced due to it's 5mm cartriage by common 5.56 rifles. By the time of the great war AK-112's were considered ancient guns, surpassed by the service rifle and Type-93. However.. its rate of fire remains unmatched."
 	icon_state = "ak112"
 	item_state = "handmade_rifle"
-	icon = 'icons/obj/guns/ballistic/ak112.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/ak112.dmi'
 	mag_type = /obj/item/ammo_box/magazine/c5mm
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -1013,7 +1013,7 @@
 /obj/item/gun/ballistic/automatic/lsw
 	name = "light support weapon"
 	desc = "This squad-level support weapon has a bullpup design. The bullpup design makes it difficult to use while lying down. Because of this it was remanded to National Guard units. It, however, earned a reputation as a reliable weapon that packs a lot of punch for its size."
-	icon = 'icons/obj/guns/ballistic/lsw.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/lsw.dmi'
 	icon_state = "lsw"
 	item_state = "lsw"
 	slowdown = 1
@@ -1059,7 +1059,7 @@
 /obj/item/gun/ballistic/automatic/bar
 	name = "BAR 1918"
 	desc = "Old but still reliable machine gun chambered in 7.62; a rare find! These can be found in museums and national guard stockpiles as an old squad support training weapon."
-	icon = 'icons/obj/guns/ballistic/bar.dmi'
+	icon = 'icons/fallout/objects/guns/ballistic/bar.dmi'
 	icon_state = "bar"
 	item_state = "R84"
 	slowdown = 1

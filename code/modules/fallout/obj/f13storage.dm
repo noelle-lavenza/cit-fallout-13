@@ -46,7 +46,7 @@
 	STR.max_combined_w_class = 14
 	STR.max_w_class = WEIGHT_CLASS_GIGANTIC
 	STR.max_items = 14
-	STR.clickopen = TRUE
+	STR.attack_hand_interact = TRUE
 
 /obj/item/storage/belt/waistsheath
 	name = "sword sheath"
@@ -109,7 +109,7 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_GIGANTIC
 	STR.max_items = 5
-	STR.clickopen = TRUE
+	STR.attack_hand_interact = TRUE
 
 /obj/item/storage/medical/ancientfirstaid
 	name = "ancient first aid box"

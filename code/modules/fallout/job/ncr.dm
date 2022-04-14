@@ -6,8 +6,6 @@
 
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
-	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
-	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
 	objectivesList = list("High command recommends the following goal for this week: Establish an outpost at the radio tower","High command recommends the following goal for this week: Scout the region for raider activity and detain any individuals breaking NCR law in our territory","High command recommends the following goal for this week: Establish good relations with unaligned individuals and improve the diplomatic standing of the NCR","High command recommends the following goal for this week: Gather funds from the wasteland by providing a service and taxing people")
 
 /datum/outfit/job/ncr/
@@ -89,7 +87,7 @@ Captain
 	head_announce = list("Security")
 	total_positions = 0
 	spawn_positions = 0
-	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
+	custom_spawn_text = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
 	outfit = /datum/outfit/job/ncr/f13captain
 
@@ -168,7 +166,7 @@ Commanding Officer (Ranges from Lieutenant to Captain)
 	title = "NCR Commanding Officer"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the direct superior to the Sergeant First Class and Enlisted, and under special circumstances, Rangers. You are the CO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
+	custom_spawn_text = "You are the direct superior to the Sergeant First Class and Enlisted, and under special circumstances, Rangers. You are the CO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "High Command"
 	selection_color = "#ffeeaa"
 	head_announce = list("Security")
@@ -237,7 +235,7 @@ Medical Officer
 	title = "NCR Medical Officer"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are lead medical professional in Camp Miller, you do not have any command authority unless it is of medical nature. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
+	custom_spawn_text = "You are lead medical professional in Camp Miller, you do not have any command authority unless it is of medical nature. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
 	supervisors = "Lieutenant and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
@@ -285,7 +283,7 @@ Sergeant First Class
 	title = "NCR Sergeant First Class"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the most senior NCO in Camp Miller. You act as an senior enlisted advisor to the Commanding Officer as well as act as in the second in Command. You have the authority to recommend promotions and as well as managing the enlisted personnel"
+	custom_spawn_text = "You are the most senior NCO in Camp Miller. You act as an senior enlisted advisor to the Commanding Officer as well as act as in the second in Command. You have the authority to recommend promotions and as well as managing the enlisted personnel"
 	supervisors = "Lieutenant and above"
 	selection_color = "#fff5cc"
 	head_announce = list("Security")
@@ -354,7 +352,7 @@ Sergeant
 	title = "NCR Sergeant"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
+	custom_spawn_text = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
 	supervisors = "Sergeant First Class and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
@@ -439,7 +437,7 @@ Corporal
 	title = "NCR Corporal"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are a junior NCO. You are tasked with organizing the enlisted ranks into fireteams and answer directly to a Sergeant and/or the Sergeant First Class."
+	custom_spawn_text = "You are a junior NCO. You are tasked with organizing the enlisted ranks into fireteams and answer directly to a Sergeant and/or the Sergeant First Class."
 	supervisors = "Sergeant and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_CORPORAL
@@ -525,7 +523,7 @@ Combat Medic
 	title = "NCR Combat Medic"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are a veteran enlisted with a medical skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
+	custom_spawn_text = "You are a veteran enlisted with a medical skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATMEDIC
@@ -571,7 +569,7 @@ Combat Engineer
 	title = "NCR Combat Engineer"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are a veteran enlisted with an engineering skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
+	custom_spawn_text = "You are a veteran enlisted with an engineering skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_COMBATENGINEER
@@ -624,7 +622,7 @@ Mp
 	title = "NCR Military Police"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are the disciplining arm of the NCRA, You protect peoples' lives and property at NCR installations by enforcing military laws and regulations. You are not allowed to leave base unless given an explicit order by High Command"
+	custom_spawn_text = "You are the disciplining arm of the NCRA, You protect peoples' lives and property at NCR installations by enforcing military laws and regulations. You are not allowed to leave base unless given an explicit order by High Command"
 	supervisors = "Lieutenants and the Sergeant First Class"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_MILITARY_POLICE
@@ -675,7 +673,7 @@ Heavy Trooper
 	title = "NCR Heavy Trooper"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are a veteran enlisted with power armor training. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
+	custom_spawn_text = "You are a veteran enlisted with power armor training. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are none present."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
@@ -717,7 +715,7 @@ Trooper
 	title = "NCR Trooper"
 	total_positions = 4
 	spawn_positions = 6
-	description = "You are considered the backbone and workforce strength of the NCR Army. You answer to everyone above you in the chain of command, taking orders from NCOs directly and obeying all commands given by the Commanding Officer."
+	custom_spawn_text = "You are considered the backbone and workforce strength of the NCR Army. You answer to everyone above you in the chain of command, taking orders from NCOs directly and obeying all commands given by the Commanding Officer."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_TROOPER
@@ -795,7 +793,7 @@ Recruit
 	title = "NCR Recruit"
 	total_positions = 4
 	spawn_positions = 4
-	description = "You are a detachment of partially trained troops sent to bolster the Yuma Garrison. You have the same duties as a Trooper but act as a reserve force. Follow are legal and valid orders from everyone that outranks you."
+	custom_spawn_text = "You are a detachment of partially trained troops sent to bolster the Yuma Garrison. You have the same duties as a Trooper but act as a reserve force. Follow are legal and valid orders from everyone that outranks you."
 	supervisors = "Troopers and above"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_NCR_RECRUIT
@@ -827,7 +825,7 @@ Off-Duty
 	title = "NCR Off-Duty"
 	total_positions = 8
 	spawn_positions = 8
-	description = "You are off-duty NCR-A personnel in the Yuma Region. Despite being out of uniform and off-duty you are still expected to follow NCR COMJ and represent the uniform properly. Failure to abide by this will result in disciplinary action."
+	custom_spawn_text = "You are off-duty NCR-A personnel in the Yuma Region. Despite being out of uniform and off-duty you are still expected to follow NCR COMJ and represent the uniform properly. Failure to abide by this will result in disciplinary action."
 	supervisors = "All NCOs and COs"
 	selection_color = "#fff5cc"
 	exp_requirements = 600
@@ -853,7 +851,7 @@ Veteran Ranger
 	title = "NCR Veteran Ranger"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
+	custom_spawn_text = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
 	supervisors = "Captain and above"
 	selection_color = "#ffeeaa"
 	display_order = JOB_DISPLAY_ORDER_VETRANGE
@@ -919,7 +917,7 @@ Veteran Ranger
 	title = "NCR Ranger Sergeant"
 	total_positions = 1
 	spawn_positions = 1
-	description = "As an NCR Ranger Sergeant, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
+	custom_spawn_text = "As an NCR Ranger Sergeant, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
 	supervisors = "Veteran Ranger"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_RANGER_SERGEANT
@@ -990,7 +988,7 @@ Veteran Ranger
 	title = "NCR Ranger"
 	total_positions = 3
 	spawn_positions = 3
-	description = "As an NCR Ranger, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
+	custom_spawn_text = "As an NCR Ranger, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
 	supervisors = "Ranger Sergeant and Veteran Ranger"
 	selection_color = "#fff5cc"
 	display_order = JOB_DISPLAY_ORDER_RANGER
@@ -1038,7 +1036,7 @@ Veteran Ranger
 
 /datum/outfit/loadout/rangertrail
 	name = "Trail Ranger"
-	head =	/obj/item/clothing/head/f13/trailranger	
+	head =	/obj/item/clothing/head/f13/trailranger
 	suit =	/obj/item/clothing/suit/armor/f13/trailranger
 	belt =	/obj/item/storage/belt/military/NCR_Bandolier
 	r_hand = /obj/item/gun/ballistic/automatic/m1garand

@@ -1,7 +1,7 @@
 GLOBAL_LIST_EMPTY(global_locks)
 /obj/item/lock_construct
 	name = "\improper lock"
-	icon = 'icons/obj/lock.dmi'
+	icon = 'icons/fallout/objects/lock.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 	var/lock_data
 	var/static/lock_uid = 1
@@ -68,7 +68,7 @@ GLOBAL_LIST_EMPTY(global_locks)
 
 /obj/item/key
 	name = "\improper key"
-	icon = 'icons/obj/key.dmi'
+	icon = 'icons/fallout/objects/key.dmi'
 	w_class = WEIGHT_CLASS_TINY
 	var/lock_data = ""
 

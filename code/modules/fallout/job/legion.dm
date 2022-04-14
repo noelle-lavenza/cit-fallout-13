@@ -4,8 +4,6 @@
 	selection_color = "#ffeeee"
 	faction = "Legion"
 
-	forbids = "The Legion forbids: Ghouls joining the Legion. Women in armed roles. Chems and drugs such as jet or alcohol. Reliance on technology. Lethally harming any servants of Caesar without proper reason."
-	enforces = "The Legion expects: Obeying orders of superiors. A roman style name. Wearing the uniform, unless acting as a nonlethal infiltrator."
 	objectivesList = list("The Legate recommends the following goal for this week: Establish an outpost at the radio tower","The Legate recommends the following goal for this week: Establish patrols and fortifications around the main road","The Legate recommends the following goal for this week: Acquire and train slaves")
 
 	exp_type = EXP_TYPE_LEGION
@@ -119,7 +117,7 @@ Orator
 	title = "Legion Orator"
 	total_positions = 0
 	spawn_positions = 0
-	description = "You are the the resonator of Caesar's better wills; a Legionnaire who has, perhaps through injury or advanced age, proven himself unable to fight effectively any longer. Instead of facing \"retirement\" in the Legion, one of your superiors took note of your studies and way with words, and you have been made the face and voice of the Conturbernae."
+	custom_spawn_text = "You are the the resonator of Caesar's better wills; a Legionnaire who has, perhaps through injury or advanced age, proven himself unable to fight effectively any longer. Instead of facing \"retirement\" in the Legion, one of your superiors took note of your studies and way with words, and you have been made the face and voice of the Conturbernae."
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_ORATOR
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
@@ -153,7 +151,7 @@ Priestess of Mars
 	title = "Priestess of Mars"
 	total_positions = 0
 	spawn_positions = 0
-	description = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
+	custom_spawn_text = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
 	supervisors = "the Centurion, Mars"
 	display_order = JOB_DISPLAY_ORDER_PRIESTESS
 	outfit = /datum/outfit/job/CaesarsLegion/f13priestess
@@ -200,7 +198,7 @@ Centurion
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the commander of the Centuria and the direct superior to the Decanii, working with them and your soldiers to establish a strong foothold within the region for Caesar's glory. You oversee all Legion operations in the area, and lead the charge against Caesar's foes."
+	custom_spawn_text = "You are the commander of the Centuria and the direct superior to the Decanii, working with them and your soldiers to establish a strong foothold within the region for Caesar's glory. You oversee all Legion operations in the area, and lead the charge against Caesar's foes."
 	supervisors = "the Legate"
 	selection_color = "#ffdddd"
 	display_order = JOB_DISPLAY_ORDER_CENTURION
@@ -282,7 +280,7 @@ Vexillarius
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = "#ffdddd"
-	description = "You answer directly to the Decani and the Centurion, acting as a standard bearer for your squad. You raise troop morale, relay orders from the Decanii and the Centurion, and rally men when ordered, however, you hold no actual authority over the troops and should instead only relay orders from your superiors."
+	custom_spawn_text = "You answer directly to the Decani and the Centurion, acting as a standard bearer for your squad. You raise troop morale, relay orders from the Decanii and the Centurion, and rally men when ordered, however, you hold no actual authority over the troops and should instead only relay orders from your superiors."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
@@ -354,7 +352,7 @@ Decanii
 	title = "Legion Veteran Decanus"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Veteran Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
+	custom_spawn_text = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Veteran Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANVET
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
@@ -419,7 +417,7 @@ Decanii
 	title = "Legion Prime Decanus"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Prime Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
+	custom_spawn_text = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Prime Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECAN
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
@@ -496,7 +494,7 @@ Decanii
 	title = "Legion Recruit Decanus"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Recruit Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
+	custom_spawn_text = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Recruit Legionaries on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Prime Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
@@ -572,7 +570,7 @@ Camp Prefect (formerly slave master)
 	title = "Camp Prefect"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are a Praefectus, a member of the feared and respected disciplinary corp of the Legion. Acting as both the master of the slave-pens and the executor of the Centurion's iron will within his ranks, you are a man that understands the absolute necessity of discipline and cohesion within the camp. By means both subtle and bloody, you are to maintain order in the castrorum and make examples of those whom would defy the will of your Centurion and Mars. Act always to ensure cooperation and discipline within the ranks to ensure the camp is not bogged down by internal strife. Additionally your duties include managing camp defenses and resources as both castellan and master of the armory so the legionaries are able to pursue their tasks with more focus. You are not to leave your faction base unless given an explicit order from the office of the Legatus"
+	custom_spawn_text = "You are a Praefectus, a member of the feared and respected disciplinary corp of the Legion. Acting as both the master of the slave-pens and the executor of the Centurion's iron will within his ranks, you are a man that understands the absolute necessity of discipline and cohesion within the camp. By means both subtle and bloody, you are to maintain order in the castrorum and make examples of those whom would defy the will of your Centurion and Mars. Act always to ensure cooperation and discipline within the ranks to ensure the camp is not bogged down by internal strife. Additionally your duties include managing camp defenses and resources as both castellan and master of the armory so the legionaries are able to pursue their tasks with more focus. You are not to leave your faction base unless given an explicit order from the office of the Legatus"
 	supervisors = "The Veteran Decanus, Venator and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_SLAVEMASTER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campprefect
@@ -618,7 +616,7 @@ Libritor
 	title = "Legion Libritor"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You are entrusted with suit of power armor and heavy weapons, and have been waging war with the Legion for many years."
+	custom_spawn_text = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You are entrusted with suit of power armor and heavy weapons, and have been waging war with the Legion for many years."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LIBRITOR
 	exp_requirements = 1200
@@ -661,7 +659,7 @@ Veteran Legionary
 	title = "Veteran Legionary"
 	total_positions = 3
 	spawn_positions = 3
-	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You are a hardened warrior, and have been waging war with the Legion for many years."
+	custom_spawn_text = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You are a hardened warrior, and have been waging war with the Legion for many years."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vetlegionary
@@ -748,7 +746,7 @@ Prime Legionairy
 	title = "Prime Legionary"
 	total_positions = 4
 	spawn_positions = 4
-	description = "You answer to the Decani and the Centurion, as well as Veterans above you. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You have been through enough battles to call yourself a prime, but you are by no means yet a Veteran."
+	custom_spawn_text = "You answer to the Decani and the Centurion, as well as Veterans above you. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Sonora. You have been through enough battles to call yourself a prime, but you are by no means yet a Veteran."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
@@ -818,7 +816,7 @@ Recruit Legionary
 	title = "Recruit Legionary"
 	total_positions = 4
 	spawn_positions = 4
-	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion."
+	custom_spawn_text = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
@@ -887,7 +885,7 @@ Venator
 	title = "Legion Venator"
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the Venator -- the Hunter. With your powerful rifle and your many years of experience, you are a formidable killing machine, capable of taking down even the most formidable targets. Note that you are not a rank-and-file legionary, and you should not be operating as such -- your job is special operations, not fighting alongside the hordes of the Legion."
+	custom_spawn_text = "You are the Venator -- the Hunter. With your powerful rifle and your many years of experience, you are a formidable killing machine, capable of taking down even the most formidable targets. Note that you are not a rank-and-file legionary, and you should not be operating as such -- your job is special operations, not fighting alongside the hordes of the Legion."
 	supervisors = "the Centurion"
 	selection_color = "#ffdddd"
 	head_announce = list("Security")
@@ -962,7 +960,7 @@ Explorer
 	title = "Legion Explorer"
 	total_positions = 3
 	spawn_positions = 3
-	description = "Acting as the eyes and ears of the Legion, you are in the region to scout it out for potential conquest. Make note of your surroundings and above all, survive to report back."
+	custom_spawn_text = "Acting as the eyes and ears of the Legion, you are in the region to scout it out for potential conquest. Make note of your surroundings and above all, survive to report back."
 	supervisors = "the Venator and Centurion"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
@@ -1027,7 +1025,7 @@ Auxilia
 	head_announce = list("Security")
 	total_positions = 3
 	spawn_positions = 3
-	description = "You are a respected and valued noncombatant for the Legion, commanding the slaves and Camp Followers and providing important surgical or engineering expertise. Though you hold more authority than the Legionaries in camp, you are not a warrior, and should not act as such unless absolutely necessary."
+	custom_spawn_text = "You are a respected and valued noncombatant for the Legion, commanding the slaves and Camp Followers and providing important surgical or engineering expertise. Though you hold more authority than the Legionaries in camp, you are not a warrior, and should not act as such unless absolutely necessary."
 	supervisors = "the Decani and Centurion"
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/f13auxilia
@@ -1114,7 +1112,7 @@ Camp Follower
 	title = "Camp Follower"
 	total_positions = 4
 	spawn_positions = 2
-	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
+	custom_spawn_text = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
 	supervisors = "the entire legion"
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
@@ -1187,7 +1185,7 @@ Slave
 	title = "Legion Slave"
 	total_positions = 0
 	spawn_positions = 2
-	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
+	custom_spawn_text = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
 	supervisors = "the entire legion, but mostly the Slavemaster"
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
 	outfit = /datum/outfit/job/CaesarsLegion/slave
@@ -1233,7 +1231,7 @@ Off-Duty Legionary
 	title = "Off-Duty Legionary"
 	total_positions = 8
 	spawn_positions = 4
-	description = "You answer to any member of the Legion that is currently on-duty and shares or is a higher rank than you, but take orders directly from the Auxilia around the camp. Your dilligence serving the Caesar as one of his Legionaries has earnt you a break. You may perform any tasks required of you, for you know how to serve the Legion well, but you are not expected to do so."
+	custom_spawn_text = "You answer to any member of the Legion that is currently on-duty and shares or is a higher rank than you, but take orders directly from the Auxilia around the camp. Your dilligence serving the Caesar as one of his Legionaries has earnt you a break. You may perform any tasks required of you, for you know how to serve the Legion well, but you are not expected to do so."
 	supervisors = "Those who share your rank or higher that are on duty."
 	display_order = JOB_DISPLAY_ORDER_LEGION_OFF_DUTY
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/offduty

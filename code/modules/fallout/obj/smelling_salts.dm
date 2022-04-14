@@ -108,3 +108,19 @@
 		to_chat(revived_mob, policy)
 	revived_mob.log_message("revived using strange reagent, [time_since_death / 10] seconds from time of death, considered [late? "late" : "memory-intact"] revival under configured policy limits.", LOG_GAME)
 	in_use = FALSE
+
+/mob/living/carbon/proc/can_revive_smellingsalts()
+	var/tlimit = DEFIB_TIME_LIMIT * 10
+	var/obj/item/organ/heart = getorgan(/obj/item/organ/heart)
+	if(suiciding || hellbound || HAS_TRAIT(src, TRAIT_HUSK) || AmBloodsucker(src))
+		return
+	if((world.time - timeofdeath) > tlimit)
+		return
+	if((getBruteLoss() >= 160) || (getFireLoss() >= 160))
+		return
+	if(!heart || (heart.organ_flags & ORGAN_FAILING))
+		return
+	var/obj/item/organ/brain/BR = getorgan(/obj/item/organ/brain)
+	if(QDELETED(BR) || BR.brain_death || (BR.organ_flags & ORGAN_FAILING) || suiciding)
+		return
+	return TRUE

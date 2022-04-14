@@ -21,7 +21,7 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the people of the town"
-	description = "You are the head honcho of Oasis and the people look to you for leadership. Pass laws to protect your Citizens, distribute the Town's funds and make deals with the powers present within the Region to better the people - or exploit them for your own personal gain."
+	custom_spawn_text = "You are the head honcho of Oasis and the people look to you for leadership. Pass laws to protect your Citizens, distribute the Town's funds and make deals with the powers present within the Region to better the people - or exploit them for your own personal gain."
 	selection_color = "#d7b088"
 
 	outfit = /datum/outfit/job/den/f13mayor
@@ -65,7 +65,7 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the mayor"
-	description = "As the chief law enforcer of the Town, your job is to keep the peace, settle local disputes, and keep your townsfolk safe and alive. Unfortunately, with the NCR and Legion closing in on the region, the Town is caught between a rock and a hard place, as with the war brings with it unsavory elements like the Khans and Outlaws. Sometimes the people you handle inside the town will be alive in cuffs, or dead on the street. Other times, they'll escape the limits of the town, to which you can put a bounty on their head for their capture, or have your deputies capture them. However, you must remember these three critical things: never leave the town undefended, keep the townsfolk alive and safe, and most importantly - keep your hand on your gun and don't you trust anyone."
+	custom_spawn_text = "As the chief law enforcer of the Town, your job is to keep the peace, settle local disputes, and keep your townsfolk safe and alive. Unfortunately, with the NCR and Legion closing in on the region, the Town is caught between a rock and a hard place, as with the war brings with it unsavory elements like the Khans and Outlaws. Sometimes the people you handle inside the town will be alive in cuffs, or dead on the street. Other times, they'll escape the limits of the town, to which you can put a bounty on their head for their capture, or have your deputies capture them. However, you must remember these three critical things: never leave the town undefended, keep the townsfolk alive and safe, and most importantly - keep your hand on your gun and don't you trust anyone."
 	selection_color = "#d7b088"
 
 	outfit = /datum/outfit/job/den/f13sheriff
@@ -117,7 +117,7 @@ Mayor
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the sheriff and the mayor"
-	description = "Working alongside the Sheriff you've known them for a while, having worked with them under the previous Sheriff - you bagged many a bandit and raider together on the road. These days you patrol the areas outside of town, tracking down bounties on the run and keeping the settlers safe from harm."
+	custom_spawn_text = "Working alongside the Sheriff you've known them for a while, having worked with them under the previous Sheriff - you bagged many a bandit and raider together on the road. These days you patrol the areas outside of town, tracking down bounties on the run and keeping the settlers safe from harm."
 	selection_color = "#dcba97"
 	exp_requirements = 12
 	exp_type = EXP_TYPE_DEN
@@ -162,7 +162,7 @@ Mayor
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "law and order"
-	description = "As a Farmer, you believe that the frontier holds abundant opportunities for you to encroach and take advantage of. Enshrouded in safety by the walls of Oasis, you enact out your skills of cultivation and husbandry, making you a vital backbone business of the town in growing medicines, crops and livestock, focusing on thriving and profiting off of this for your own intrinsic goals. As per your terms of agreement you should follow the law and order of the town, maintaining a distinct amount of peace from the wild wasteland that civilisation hopes to outrun..."
+	custom_spawn_text = "As a Farmer, you believe that the frontier holds abundant opportunities for you to encroach and take advantage of. Enshrouded in safety by the walls of Oasis, you enact out your skills of cultivation and husbandry, making you a vital backbone business of the town in growing medicines, crops and livestock, focusing on thriving and profiting off of this for your own intrinsic goals. As per your terms of agreement you should follow the law and order of the town, maintaining a distinct amount of peace from the wild wasteland that civilisation hopes to outrun..."
 	selection_color = "#dcba97"
 	exp_requirements = 2
 	exp_type = EXP_TYPE_CREW
@@ -208,7 +208,7 @@ Mayor
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "law and order"
-	description = "Prospecting is a complicated business, some call it scrounging or looting, but there is more to it then sifting through rubble - few can boast the skills you posess in mining and delving through the ruins of pre-war America. Not many survive this line of business and the pay has always been uncertain, but perhaps today you'll find strike gold."
+	custom_spawn_text = "Prospecting is a complicated business, some call it scrounging or looting, but there is more to it then sifting through rubble - few can boast the skills you posess in mining and delving through the ruins of pre-war America. Not many survive this line of business and the pay has always been uncertain, but perhaps today you'll find strike gold."
 	selection_color = "#dcba97"
 
 	exp_requirements = 12
@@ -262,7 +262,7 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "law and order"
-	description = "Handy with a scalpel and scanner, your expertise in the practice of medicine makes you an indispensible asset to the Town. Just remember - medicine doesn't come free, and you aren't here out of the kindness of your heart. Be sure to turn a profit, or the Mayor might reconsider your position!"
+	custom_spawn_text = "Handy with a scalpel and scanner, your expertise in the practice of medicine makes you an indispensible asset to the Town. Just remember - medicine doesn't come free, and you aren't here out of the kindness of your heart. Be sure to turn a profit, or the Mayor might reconsider your position!"
 	selection_color = "#dcba97"
 
 	exp_requirements = 12
@@ -306,7 +306,7 @@ Mayor
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Your Master(s)."
-	description = "You are a beacon of faith in the wasteland. Guide the Town and any others who wish to be led on spiritual matters, and try to build your flock. Remember, the Oasis Oak and the Church are the centre of your religion - protect them at all costs."
+	custom_spawn_text = "You are a beacon of faith in the wasteland. Guide the Town and any others who wish to be led on spiritual matters, and try to build your flock. Remember, the Oasis Oak and the Church are the centre of your religion - protect them at all costs."
 	selection_color = "#dcba97"
 
 	exp_requirements = 12
@@ -462,7 +462,7 @@ Mayor
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "law and order"
-	description = "As a Barkeep, you believe that the frontier holds abundant opportunity for bartending and service. Hidden safely away behind the walls of Oasis, you enact out your skills of mixing the finest drinks and serving the best grub in the wasteland. As per your terms of agreement you should follow the law and order of the town. However the Blue Oyster is your private business, working in harmony with the farm next door to supply you with crop and goods to keep you in profit."
+	custom_spawn_text = "As a Barkeep, you believe that the frontier holds abundant opportunity for bartending and service. Hidden safely away behind the walls of Oasis, you enact out your skills of mixing the finest drinks and serving the best grub in the wasteland. As per your terms of agreement you should follow the law and order of the town. However the Blue Oyster is your private business, working in harmony with the farm next door to supply you with crop and goods to keep you in profit."
 	selection_color = "#dcba97"
 	exp_requirements = 12
 	exp_type = EXP_TYPE_CREW
@@ -536,7 +536,7 @@ Mayor
 	total_positions = 8
 	spawn_positions = 8
 	supervisors = "law and order"
-	description = "You are a Settler living within the Town of Oasis - as the name suggests, it is a slightly more civilised place amidst the chaos of the Wasteland. Treat it as such, be sure to follow the laws of the land and do not associate with those who have a tendency not to, or you are likely to face exile. Remember that Oasis is your home, and that you should not be leaving to explore the Wastes."
+	custom_spawn_text = "You are a Settler living within the Town of Oasis - as the name suggests, it is a slightly more civilised place amidst the chaos of the Wasteland. Treat it as such, be sure to follow the laws of the land and do not associate with those who have a tendency not to, or you are likely to face exile. Remember that Oasis is your home, and that you should not be leaving to explore the Wastes."
 	selection_color = "#dcba97"
 	exp_requirements = 2
 	exp_type = EXP_TYPE_CREW
@@ -621,7 +621,7 @@ Mayor
 	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
-	description = "As a Detective you are a private eye and investigator who assists private persons to gather evidence, conduct surveillance, find missing people, and verify information. As a private investigator you are not responsible for peacekeeping the wasteland, but by working with forces greater than yourself to resolve conflicts and bring order where it is not present."
+	custom_spawn_text = "As a Detective you are a private eye and investigator who assists private persons to gather evidence, conduct surveillance, find missing people, and verify information. As a private investigator you are not responsible for peacekeeping the wasteland, but by working with forces greater than yourself to resolve conflicts and bring order where it is not present."
 	supervisors = "law and order"
 	selection_color = "#dcba97"
 	outfit = /datum/outfit/job/wasteland/f13detective
@@ -662,9 +662,8 @@ Mayor
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "law and order"
-	description = "No matter where society lurks, profit and fortune are there to be made! It is up to you to distribute caps and earn interest while safekeeping items of value for the wastelands denizens! Ensure you make a profit and make your money back no matter the cost. You are to work alongside the Town, and should not be attempting to harm the residents of Oasis."
+	custom_spawn_text = "No matter where society lurks, profit and fortune are there to be made! It is up to you to distribute caps and earn interest while safekeeping items of value for the wastelands denizens! Ensure you make a profit and make your money back no matter the cost. You are to work alongside the Town, and should not be attempting to harm the residents of Oasis."
 	selection_color = "#dcba97"
-	enforces = "You are in a Job meant for encouraging roleplay with others, do not abandon your post or hoard money unless absolutely necessary. Do not use the caps provided for yourself."
 
 	outfit = /datum/outfit/job/den/f13banker
 
@@ -741,7 +740,7 @@ Mayor
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "law and order"
-	description = "The capitalist economy of pre-war america survived alongside its people. Now it's your job to continue its survival, so make some caps!"
+	custom_spawn_text = "The capitalist economy of pre-war america survived alongside its people. Now it's your job to continue its survival, so make some caps!"
 	selection_color = "#dcba97"
 
 	outfit = /datum/outfit/job/den/f13shopkeeper

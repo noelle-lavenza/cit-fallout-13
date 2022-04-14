@@ -1,6 +1,6 @@
 /obj/vertibird_exit_door
 	name = "exit hatch"
-	icon = 'icons/obj/doors/airlocks/survival/horizontal/survival.dmi'
+	icon = 'icons/fallout/misc/vertibird_hatch.dmi'
 	icon_state = "closed"
 	anchored = 1
 	density = 1

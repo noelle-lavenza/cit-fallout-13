@@ -7,7 +7,7 @@
 	density = 1
 	anchored = 1
 	layer = 5
-	icon = 'icons/obj/Ritas.dmi'
+	icon = 'icons/fallout/structures/setpieces.dmi'
 	resistance_flags = INDESTRUCTIBLE
 /*
 /obj/structure/billboard/New()

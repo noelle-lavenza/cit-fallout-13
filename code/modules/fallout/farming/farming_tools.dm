@@ -49,7 +49,7 @@
 // RAKE
 // ------
 
-/obj/item/cultivator/rake 
+/obj/item/cultivator/rake
 	name = "rake"
 	icon_state = "rake"
 	item_state = "rake"
@@ -132,16 +132,17 @@
 	<br>
 	<b>Fertilizing from the compost bin</b>
 	<br>
-	Don't worry about running out. Just stuff in seeds, eggs, burned messes, or even better, grown fruits and vegetables, or meat, and you will soon have plenty of compost. 
+	Don't worry about running out. Just stuff in seeds, eggs, burned messes, or even better, grown fruits and vegetables, or meat, and you will soon have plenty of compost.
 	<br>
 	<b>Fertilizing directly</b>
-	<br> 
+	<br>
 	You can stuff things directly into the soil to get various effects. Ghoul meat, or ground up insect chitin makes the plants grow in strange ways. Ground bone is great fertilizer. Try various things and see what works.
 	<br>
 	<b>Plant improvement</b>
 	<br>
 	Plants usually grow more potent with generations if you take good care of them. Keep track of the better, larger fruits and make seeds from them in the extractor for the next crop."}
 
+/*
 
 // ------------------------------------
 // Scythe - lacks a real purpose in FO
@@ -203,3 +204,4 @@
 		stam_gain += 2								//Initial hitcost
 		user.adjustStaminaLoss(-stam_gain)
 		user.DelayNextAction()
+*/

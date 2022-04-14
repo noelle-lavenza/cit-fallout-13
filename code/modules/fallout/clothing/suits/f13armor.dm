@@ -132,7 +132,6 @@
 /obj/item/clothing/suit/armor/f13/combat/mk2
 	name = "reinforced combat armor"
 	desc = "(VI) A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates."
-	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "combat_armor_mk2"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 

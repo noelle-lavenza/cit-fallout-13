@@ -6,7 +6,7 @@
 	icon_state = "wellwheel"
 	var/moving = 0
 	//var/use_sound = 'sound/machines/door_open.ogg' // if we want a sound for it later
-	icon = 'icons/obj/Ritas.dmi'
+	icon = 'icons/fallout/structures/setpieces.dmi'
 	var/using_time = 2
 
 /obj/structure/sink/well/proc/Use(animate)
