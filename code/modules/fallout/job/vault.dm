@@ -8,8 +8,6 @@ Science: 47 ACCESS_RESEARCH
 here's a tip, go search DEFINES/access.dm
 */
 // I swear to god stop copy-pasting you damn snowflakes
-/datum/job/vault
-
 /datum/outfit/job/vault
 	gloves = /obj/item/pda
 
@@ -22,9 +20,6 @@ here's a tip, go search DEFINES/access.dm
 /*
 Overseer
 */
-
-/datum/job/vault
-	objectivesList = list("Leadership recommends the following goal for this week: Establish trade with the wasteland","Leadership recommends the following goal for this week: Acquire blueprints and interesting artifacts for research", "Leadership recommends the following goal for this week: Expand operations outside the vault")
 
 /datum/job/vault/f13overseer
 	title = "Overseer"

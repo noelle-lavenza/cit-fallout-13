@@ -39,6 +39,7 @@ Coven Stuff
 		/obj/item/reagent_containers/glass/bottle/FEV_solution=1
 		)
 /*
+/*
 Great Khans
 */
 /datum/job/wasteland/f13genghis
@@ -193,7 +194,6 @@ Great Khans
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 
 
-
 /datum/outfit/loadout/pusher
 	name = "Chemist"
 	backpack_contents = list(
@@ -221,6 +221,7 @@ Great Khans
 		/obj/item/reagent_containers/hypospray/medipen/f13/stimpak=2,
 		/obj/item/restraints/legcuffs/bola/tactical=1,
 		/obj/item/book/granter/trait/big_leagues=1)
+*/
 /*
 Bandit
 */
@@ -334,7 +335,7 @@ Outlaw
 	department_head = list("Captain")
 	head_announce = list("Security")
 	faction = "Wastelander"
-	social_faction = "Raiders"
+	// social_faction = "Raiders"
 	total_positions = 15
 	spawn_positions = 15
 	custom_spawn_text = "You are an undesirable figure of some kind- perhaps a corrupt official, or a cannibalistic bartender, or a devious conman, to name a few examples. You have more freedom than anyone else in the wastes, and are not bound by the same moral code as others, but though you may only be interested in self-gain, you still have a responsibility to make your time here interesting, fun, and engaging for others- this means that whatever path you pursue should be more nuanced and flavorful than simple highway robbery or slavery. (Adminhelp if you require help setting up your character for the round.)"
@@ -437,9 +438,10 @@ Outlaw
 	..()
 	if(visualsOnly)
 		return
-
+/*
 	H.social_faction = "Raiders"
 	H.verbs |= /mob/living/proc/creategang
+*/
 
 /datum/outfit/loadout/mercenary
 	name = "Mercenary"

@@ -1,6 +1,5 @@
 /datum/job/tribals //do NOT use this for anything, it's just to store faction datums
 	selection_color = "#ffeeaa"
-	objectivesList = list("The village elders suggest the following goal for this week: Recruit worthy outlanders into the tribe and teach them of Yabhat","The village elders suggest the following goal for this week: Hunt dangerous creatures to improve the clan's standing","The village elders suggest the following goal for this week: Throw a generous feast for the tribe and invite friendly outsiders to partake in the blessing of Ghostis")
 
 /datum/outfit/job/tribal/
 	name = "TRIBALdatums"

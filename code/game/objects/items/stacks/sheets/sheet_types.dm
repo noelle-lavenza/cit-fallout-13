@@ -223,6 +223,9 @@ GLOBAL_LIST_INIT(plasteel_recipes, list ( \
 	. = ..()
 	. += GLOB.plasteel_recipes
 
+/obj/item/stack/sheet/plasteel/five
+	amount = 5
+
 /obj/item/stack/sheet/plasteel/twenty
 	amount = 20
 
@@ -428,6 +431,9 @@ GLOBAL_LIST_INIT(cloth_recipes, list ( \
 	. = ..()
 	. += GLOB.cloth_recipes
 
+/obj/item/stack/sheet/cloth/five
+	amount = 5
+
 /obj/item/stack/sheet/cloth/ten
 	amount = 10
 
@@ -543,6 +549,9 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 /obj/item/stack/sheet/cardboard/get_main_recipes()
 	. = ..()
 	. += GLOB.cardboard_recipes
+
+/obj/item/stack/sheet/cardboard/twenty
+	amount = 20
 
 /obj/item/stack/sheet/cardboard/fifty
 	amount = 50

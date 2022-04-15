@@ -196,7 +196,7 @@
 	var/datum/job/job_to_free = SSjob.GetJob(job)
 	job_to_free?.current_positions--
 	for(var/datum/data/record/rec as anything in list(GLOB.data_core.medical, GLOB.data_core.security, GLOB.data_core.general))
-		if(rec.fields["name"] == mob_occupant.real_name)
+		if(rec.fields["name"] == real_name)
 			qdel(rec)
 	var/dat = "[key_name(src)] has despawned as [src], job [job], in [AREACOORD(src)]. Contents despawned along:"
 	for(var/i in contents)

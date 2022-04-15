@@ -6,7 +6,6 @@
 
 	access = list(ACCESS_NCR)
 	minimal_access = list(ACCESS_NCR)
-	objectivesList = list("High command recommends the following goal for this week: Establish an outpost at the radio tower","High command recommends the following goal for this week: Scout the region for raider activity and detain any individuals breaking NCR law in our territory","High command recommends the following goal for this week: Establish good relations with unaligned individuals and improve the diplomatic standing of the NCR","High command recommends the following goal for this week: Gather funds from the wasteland by providing a service and taxing people")
 
 /datum/outfit/job/ncr/
 	name = "NCRdatums"

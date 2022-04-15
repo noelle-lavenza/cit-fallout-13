@@ -118,5 +118,27 @@
 	locked = TRUE
 
 /////////
-//Items
+//Job variables
 /////////
+/datum/outfit/job
+	var/chemwhiz = FALSE //F13 Chemwhiz, for chemistry machines
+	var/pa_wear = FALSE //F13 pa_wear, ability to wear PA
+	var/gunsmith_one = FALSE //F13 gunsmith perk, ability to craft Tier 2 guns and ammo
+	var/gunsmith_two = FALSE //F13 gunsmith perk, ability to craft Tier 3 guns and ammo
+	var/gunsmith_three = FALSE //F13 gunsmith perk, ability to craft Tier 4 guns and ammo
+	var/gunsmith_four = FALSE //F13 gunsmith perk, ability to craft Tier 5 guns and ammo
+
+/datum/outfit/job/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	. = ..()
+	if(chemwhiz)
+		ADD_TRAIT(H, TRAIT_CHEMWHIZ, "chemwhiz")
+	if(pa_wear)
+		ADD_TRAIT(H, TRAIT_PA_WEAR, "pa_wear")
+	if(gunsmith_one)
+		ADD_TRAIT(H, TRAIT_GUNSMITH_ONE, "gunsmith_one")
+	if(gunsmith_two)
+		ADD_TRAIT(H, TRAIT_GUNSMITH_TWO, "gunsmith_two")
+	if(gunsmith_three)
+		ADD_TRAIT(H, TRAIT_GUNSMITH_THREE, "gunsmith_three")
+	if(gunsmith_four)
+		ADD_TRAIT(H, TRAIT_GUNSMITH_FOUR, "gunsmith_four")

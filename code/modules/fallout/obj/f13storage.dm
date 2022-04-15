@@ -555,3 +555,15 @@
 	for(var/i in 1 to 10)
 		new /obj/item/reagent_containers/hypospray/medipen/f13/stimpak/super(src)
 //
+
+/obj/item/storage/backpack/trekker
+	name = "trekkers pack"
+	desc = "A light and durable pack often seen in use by those prone to wandering the wastes, often alone."
+	icon_state = "trekkerpack"
+	item_state = "trekkerpack"
+
+/obj/item/storage/backpack/satchel/trekker
+	name = "trekkers satchel"
+	desc = "A light and durable satchel often seen in use by those prone to wandering the wastes, often alone."
+	icon_state = "satchel-trekker"
+	item_state = "satchel-trekker"

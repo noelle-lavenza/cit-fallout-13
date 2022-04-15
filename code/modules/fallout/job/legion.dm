@@ -4,7 +4,6 @@
 	selection_color = "#ffeeee"
 	faction = "Legion"
 
-	objectivesList = list("The Legate recommends the following goal for this week: Establish an outpost at the radio tower","The Legate recommends the following goal for this week: Establish patrols and fortifications around the main road","The Legate recommends the following goal for this week: Acquire and train slaves")
 
 	exp_type = EXP_TYPE_LEGION
 

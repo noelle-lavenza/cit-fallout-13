@@ -2,7 +2,6 @@
 	selection_color = "#ADD8E6"
 	faction = "VTCC"
 	exp_type = EXP_TYPE_VTCC
-	objectivesList = list("The Overseer recommends the following goal for this week: Work together to maximize profits","The Overseer recommends the following goal for this week: Establish good relations with two or more major factions","The Overseer recommends the following goal for this week: Stay neutral at all costs")
 
 /datum/outfit/job/vtcc/
 	name = "VTCCdatums"

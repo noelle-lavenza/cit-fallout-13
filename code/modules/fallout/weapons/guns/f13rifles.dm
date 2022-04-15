@@ -16,7 +16,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
-	can_automatic = FALSE
+	// can_automatic = FALSE
 	slowdown = 0.5
 	fire_delay = 6
 	spread = 0
@@ -323,7 +323,7 @@
 /obj/item/gun/ballistic/rifle/mag
 	name = "magazine fed bolt-action rifle template"
 	desc = "should not exist."
-	extra_speed = 800
+	// extra_speed = 800
 
 /obj/item/gun/ballistic/rifle/mag/examine(mob/user)
 	. = ..()
@@ -406,7 +406,7 @@
 	fire_delay = 5
 	spread = 1
 	can_unsuppress = FALSE
-	can_scope = TRUE
+	// can_scope = TRUE
 	suppressed = 1
 	// can_scope = TRUE
 	// scope_state = "scope_medium"
@@ -421,16 +421,16 @@
 	icon_state = "destroyer"
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m45
-	extra_damage = 10
-	extra_penetration = 0.15
+	// extra_damage = 10
+	// extra_penetration = 0.15
 	fire_delay = 6
 	spread = 0
 	can_unsuppress = FALSE
 	suppressed = 1
-	can_scope = TRUE
-	scope_state = "scope_medium"
-	scope_x_offset = 6
-	scope_y_offset = 14
+	// can_scope = TRUE
+	// scope_state = "scope_medium"
+	// scope_x_offset = 6
+	// scope_y_offset = 14
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
 //.50 BMG AMR					Keywords: .50, Very high damage, Very high AP, Big-Fuckin'-Gun

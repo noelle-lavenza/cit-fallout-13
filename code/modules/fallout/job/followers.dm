@@ -1,7 +1,6 @@
 /datum/job/followers //do NOT use this for anything, it's just to store faction datums
 	selection_color = "#ffeeaa"
 	exp_type = EXP_TYPE_FOLLOWERS
-	objectivesList = list("Administration recommends the following goal for this week: Establish medical outposts throughout the wasteland","Administration recommends the following goal for this week: Experiment with and improve medical techniques and equipment","Administration recommends the following goal for this week: Replenish the operation's funds through donations and sales")
 
 /datum/outfit/job/followers/
 	name =		"FOLLOWERSdatums"

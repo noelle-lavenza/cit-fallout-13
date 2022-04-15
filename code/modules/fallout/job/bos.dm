@@ -11,7 +11,6 @@ Main doors: ACCESS_CAPTAIN 20
 	outfit = /datum/outfit/job/bos/
 	exp_type = EXP_TYPE_BROTHERHOOD
 
-	objectivesList = list("The Elders recommend the following goal for this week: Establish an outpost at the radio tower and monitor frequencies."," The Elders recommend the following goal for this week: Study technology that can benefit our cause","The Elders recommend the following goal for this week: Acquire or confiscate dangerous technology, adhering to the codex","The Elders recommend the following goal for this week: Open a village topside where wasters can learn of our rightful mission")
 
 /datum/outfit/job/bos
 	name = "bosdatums"
