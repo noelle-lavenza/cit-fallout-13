@@ -174,3 +174,38 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("spicy cooked insect guts" = 1)
 	foodtype = MEAT
+
+/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul
+	name = "ghoul meat"
+	icon_state = "flymeat"
+	desc = "Nothing says tasty like necrotic, radioactive mutant flesh!"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/radium = 6)
+	filling_color = "#FA8072"
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/ghoul
+	slice_path = null
+	foodtype = RAW | MEAT | GROSS
+
+/obj/item/reagent_containers/food/snacks/meat/steak/ghoul
+	name = "ghoul steak"
+	desc = "Why would you even cook this?"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
+	bonus_reagents = list(/datum/reagent/radium = 3)
+	foodtype = MEAT | GROSS
+
+/obj/item/reagent_containers/food/snacks/meat/slab/human/centaur
+	name = "centaur meat"
+	icon_state = "flymeat"
+	desc = "Absolutely disgusting."
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/radium = 10)
+	filling_color = "#FA8072"
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/centaur
+	slice_path = null
+	foodtype = RAW | MEAT | GROSS
+
+/obj/item/reagent_containers/food/snacks/meat/steak/centaur
+	name = "centaur steak"
+	desc = "No matter how much you cook, it doesn't seem safe to eat."
+	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
+	bonus_reagents = list(/datum/reagent/radium = 5)
+	foodtype = MEAT | GROSS
+

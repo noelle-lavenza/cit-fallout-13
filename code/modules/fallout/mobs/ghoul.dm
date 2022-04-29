@@ -150,7 +150,7 @@
 	ranged_cooldown_time = 40
 	projectiletype = /obj/item/projectile/bullet/a357
 	projectilesound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
-	extra_projectiles = 2
+	rapid = 3
 
 /mob/living/simple_animal/hostile/ghoul/ranged/raider
 	name = "raider ghoul"
@@ -163,7 +163,7 @@
 	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/c4570/swc
 	projectilesound = 'sound/f13weapons/brushgunfire.ogg'
-	extra_projectiles = 1
+	rapid = 2
 
 /mob/living/simple_animal/hostile/ghoul/ranged/desperado
 	name = "desperado ghoul"
@@ -176,7 +176,7 @@
 	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/m44/simple
 	projectilesound = 'sound/f13weapons/44mag.ogg'
-	extra_projectiles = 5
+	rapid = 6
 
 /mob/living/simple_animal/hostile/ghoul/ranged/vault
 	name = "vault ghoul"
@@ -189,7 +189,7 @@
 	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/bullet/c10mm
 	projectilesound = 'sound/f13weapons/10mm_fire_03.ogg'
-	extra_projectiles = 2
+	rapid = 3
 
 /mob/living/simple_animal/hostile/ghoul/ranged/vault/shotgun
 	desc = "A ghoul that has lost its mind and become aggressive. It appears to be dressed in vault gear and using a browing auto5."
@@ -198,7 +198,7 @@
 	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/bullet/shotgun_slug
 	projectilesound = 'sound/f13weapons/auto5.ogg'
-	extra_projectiles = 1
+	rapid = 2
 
 /mob/living/simple_animal/hostile/ghoul/ranged/vault/musket
 	desc = "A ghoul that has lost its mind and become aggressive. It appears to be dressed in vault gear and using a musket."
@@ -207,7 +207,7 @@
 	ranged_cooldown_time = 35
 	projectiletype = /obj/item/projectile/beam/laser/musket
 	projectilesound = 'sound/f13weapons/lasmusket_fire.ogg'
-	extra_projectiles = 0
+	rapid = 0
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary
 	name = "mercenary ghoul"
@@ -221,7 +221,7 @@
 	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/a556/match
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
-	extra_projectiles = 3
+	rapid = 4
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary/laser
 	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds an AER-9."
@@ -230,7 +230,7 @@
 	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/beam/laser/lasgun
 	projectilesound = 'sound/f13weapons/aer9fire.ogg'
-	extra_projectiles = 1
+	rapid = 2
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary/breacher
 	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds a riot shotgun."
@@ -239,7 +239,7 @@
 	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/bullet/shotgun_slug
 	projectilesound = 'sound/f13weapons/riot_shotgun.ogg'
-	extra_projectiles = 2
+	rapid = 3
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary/amr
 	desc = "A ghoul clad in full combat armor seemingly with his mind still intact. Weilds an anti-materiel rifle."
@@ -251,7 +251,7 @@
 	ranged_cooldown_time = 15
 	projectiletype = /obj/item/projectile/bullet/a50MG
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
-	extra_projectiles = 0
+	rapid = 0
 
 /mob/living/simple_animal/hostile/ghoul/ranged/mercenary/amr/explosive
 	projectiletype = /obj/item/projectile/bullet/a50MG/explosive
@@ -438,7 +438,7 @@
 	ranged_cooldown_time = 35
 	projectiletype = /obj/item/projectile/bullet/c45/op
 	projectilesound = 'sound/weapons/gunshot_smg.ogg'
-	extra_projectiles = 4
+	rapid = 5
 
 /mob/living/simple_animal/hostile/ghoul/rebound/regular/sniper
 	desc = "A ghoul serving under the banner of the Rebound. They hold a tinkered sniper rifle and are clad in a duster with a gasmask."
@@ -450,7 +450,7 @@
 	ranged_cooldown_time = 60
 	projectiletype = /obj/item/projectile/bullet/a50MG
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
-	extra_projectiles = 0
+	rapid = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver
 	name = "rebound ghoul reaver"
@@ -484,7 +484,7 @@
 	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/c5mm
 	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
-	extra_projectiles = 4
+	rapid = 5
 	taunt_chance = 0
 
 /obj/effect/mob_spawn/human/corpse/rebound/reaver
@@ -508,7 +508,7 @@
 	ranged_cooldown_time = 35
 	projectiletype = /obj/item/projectile/bullet/shotgun_slug
 	projectilesound = 'sound/f13weapons/riot_shotgun.ogg'
-	extra_projectiles = 2
+	rapid = 3
 
 /mob/living/simple_animal/hostile/ghoul/rebound/reaver/wattz
 	desc = "A heavy ghoul serving under the banner of the Rebound. They weild a wattz 2000 and clad in a set of a combat armor."
@@ -519,7 +519,7 @@
 	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/beam/laser/wattz2k
 	projectilesound = 'sound/weapons/laser3.ogg'
-	extra_projectiles = 0
+	rapid = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/commisar
 	name = "rebound ghoul commisar"
@@ -553,7 +553,7 @@
 	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/bullet/a762/match
 	projectilesound = 'sound/f13weapons/marksman_rifle.ogg'
-	extra_projectiles = 2
+	rapid = 3
 	taunt_chance = 0
 
 /obj/effect/mob_spawn/human/corpse/rebound/commisar
@@ -578,7 +578,7 @@
 	ranged_cooldown_time = 35
 	projectiletype = /obj/item/projectile/bullet/a127mm
 	projectilesound = 'sound/f13weapons/m14.ogg'
-	extra_projectiles = 0
+	rapid = 0
 
 /mob/living/simple_animal/hostile/ghoul/rebound/elite
 	name = "rebound ghoul chosen"
@@ -612,7 +612,7 @@
 	ranged_cooldown_time = 25
 	projectiletype = /obj/item/projectile/beam/laser/rcw
 	projectilesound = 'sound/f13weapons/rcwfire.ogg'
-	extra_projectiles = 5
+	rapid = 6
 	stat_attack = UNCONSCIOUS
 	taunt_chance = 0
 
@@ -640,7 +640,7 @@
 	ranged_cooldown_time = 20
 	projectiletype = /obj/item/projectile/f13plasma
 	projectilesound = 'sound/f13weapons/plasma_rifle.ogg'
-	extra_projectiles = 1
+	rapid = 2
 
 /mob/living/simple_animal/hostile/ghoul/rebound/captain
 	name = "Captain Kavad"
@@ -675,7 +675,7 @@
 	ranged_cooldown_time = 15
 	projectiletype = /obj/item/projectile/beam/laser/oldpulse
 	projectilesound = 'sound/weapons/ionrifle.ogg'
-	extra_projectiles = 2
+	rapid = 3
 
 /mob/living/simple_animal/hostile/ghoul/rebound/captain/death()
 	visible_message("In his last dying breath Captain Kavad says '...Semper...Fi....you have...no idea....what you just started...' turning on his self destruct.")

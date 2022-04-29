@@ -1,5 +1,4 @@
 // In this document: Gecko, Nighstalker, Molerat
-
 /mob/living/simple_animal
 	var/emote_taunt_sound // Does it have a sound associated with the emote?
 	var/idlesound = null //What to play when idling, if anything.
@@ -13,6 +12,18 @@
 		if (prob(5))
 			var/chosen_sound = pick(idlesound)
 			playsound(src, chosen_sound, 60, FALSE)
+
+/mob/living/simple_animal/hostile
+	var/decompose = FALSE //Does this mob decompose over time when dead?
+
+/mob/living/simple_animal/hostile/BiologicalLife(seconds, times_fired)
+	if(!(. = ..()))
+		walk(src, 0) //stops walking
+		if(decompose)
+			if(prob(0.2)) // 0.2% chance every cycle to decompose
+				visible_message(span_notice("\The dead body of the [src] decomposes!"))
+				gib(FALSE, FALSE, FALSE, TRUE)
+		return
 
 /mob/living/simple_animal/hostile/Aggro()
 	. = ..()

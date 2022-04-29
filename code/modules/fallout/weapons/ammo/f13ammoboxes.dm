@@ -1,3 +1,16 @@
+/obj/item/ammo_box/tube/a357
+	name = "speed loader tube (.357)"
+	desc = "Designed to quickly reload repeaters."
+	icon_state = "357tube"
+	caliber = "357"
+	ammo_type = /obj/item/ammo_casing/a357
+	max_ammo = 12
+	multiple_sprites = 1
+	custom_materials = list(/datum/material/iron = 40000)
+
+/obj/item/ammo_box/tube/a357/empty
+	start_empty = 1
+
 
 //.44 Magnum
 /obj/item/ammo_box/m44
@@ -566,4 +579,3 @@
 
 /obj/item/ammo_box/l10mm/empty
 	start_empty = 1
-

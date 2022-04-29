@@ -264,7 +264,6 @@
 
 
 /obj/item/clothing/head/helmet/f13/power_armor/mob_can_equip(mob/living/carbon/human/user, mob/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE, clothing_check = FALSE, list/return_warning)
-	var/mob/living/carbon/human/H = user
 	if(!istype(user))
 		return FALSE
 	if(src == user.head) //Suit is already equipped

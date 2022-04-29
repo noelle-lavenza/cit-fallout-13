@@ -135,7 +135,7 @@
 	melee_damage_upper = 40
 	retreat_distance = 6
 	minimum_distance = 6
-	extra_projectiles = 2
+	rapid = 3
 	ranged_cooldown_time = 22
 	loot = list(/obj/effect/mob_spawn/human/corpse/enclave/specialist)
 	healable = 1
@@ -196,7 +196,7 @@
 	health = 750
 	melee_damage_lower = 55
 	melee_damage_upper = 55
-	extra_projectiles = 5 //6 projectiles. oh lord.
+	rapid = 6 //6 projectiles. oh lord.
 	retreat_distance = 3
 	minimum_distance = 5
 	ranged_cooldown_time = 12

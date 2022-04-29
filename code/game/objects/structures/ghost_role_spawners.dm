@@ -73,7 +73,7 @@
 	yolk.gib()
 	QDEL_NULL(egg)
 	return ..()
-	
+
 /obj/effect/mob_spawn/human/ash_walker
 	name = "ash walker egg"
 	desc = "A man-sized yellow egg, spawned from some unfathomable creature. A humanoid silhouette lurks within."
@@ -828,56 +828,6 @@
 	else
 		H.remove_alt_appearance("ghost_cafe_disguise")
 		currently_disguised = FALSE
-
-/obj/effect/mob_spawn/human/ghostcafe/special(mob/living/carbon/human/new_spawn)
-	if(new_spawn.client)
-		new_spawn.client.prefs.copy_to(new_spawn)
-		var/area/A = get_area(src)
-		var/datum/outfit/O = new /datum/outfit/ghostcafe()
-		O.equip(new_spawn, FALSE, new_spawn.client)
-		SSjob.equip_loadout(null, new_spawn, FALSE)
-		SSquirks.AssignQuirks(new_spawn, new_spawn.client, TRUE, TRUE, null, FALSE, new_spawn)
-		new_spawn.AddElement(/datum/element/ghost_role_eligibility, free_ghosting = TRUE)
-		new_spawn.AddElement(/datum/element/dusts_on_catatonia)
-		new_spawn.AddElement(/datum/element/dusts_on_leaving_area,list(A.type,/area/hilbertshotel))
-		ADD_TRAIT(new_spawn, TRAIT_SIXTHSENSE, GHOSTROLE_TRAIT)
-		ADD_TRAIT(new_spawn, TRAIT_EXEMPT_HEALTH_EVENTS, GHOSTROLE_TRAIT)
-		ADD_TRAIT(new_spawn, TRAIT_NO_MIDROUND_ANTAG, GHOSTROLE_TRAIT) //The mob can't be made into a random antag, they are still eligible for ghost roles popups.
-		to_chat(new_spawn,"<span class='boldwarning'>Ghosting is free!</span>")
-		var/datum/action/toggle_dead_chat_mob/D = new(new_spawn)
-		D.Grant(new_spawn)
-		var/datum/action/disguise/disguise_action = new(new_spawn)
-		disguise_action.Grant(new_spawn)
-
-/datum/outfit/ghostcafe
-	name = "ID, jumpsuit and shoes"
-	uniform = /obj/item/clothing/under/color/random
-	shoes = /obj/item/clothing/shoes/sneakers/black
-	id = /obj/item/card/id/no_banking
-	r_hand = /obj/item/storage/box/syndie_kit/chameleon/ghostcafe
-
-
-/datum/outfit/ghostcafe/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	..()
-	if (isplasmaman(H))
-		head = /obj/item/clothing/head/helmet/space/plasmaman
-		uniform = /obj/item/clothing/under/plasmaman
-		l_hand= /obj/item/tank/internals/plasmaman/belt/full
-		mask = /obj/item/clothing/mask/breath
-		return
-
-	var/suited = !preference_source || preference_source.prefs.jumpsuit_style == PREF_SUIT
-	if (CONFIG_GET(flag/grey_assistants))
-		uniform = suited ? /obj/item/clothing/under/color/grey : /obj/item/clothing/under/color/jumpskirt/grey
-	else
-		if(SSevents.holidays && SSevents.holidays[PRIDE_MONTH])
-			uniform = suited ? /obj/item/clothing/under/color/rainbow : /obj/item/clothing/under/color/jumpskirt/rainbow
-		else
-			uniform = suited ? /obj/item/clothing/under/color/random : /obj/item/clothing/under/color/jumpskirt/random
-
-/datum/outfit/ghostcafe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	H.internal = H.get_item_for_held_index(1)
-	H.update_internals_hud_icon(1)
 
 /obj/item/storage/box/syndie_kit/chameleon/ghostcafe
 	name = "ghost cafe costuming kit"

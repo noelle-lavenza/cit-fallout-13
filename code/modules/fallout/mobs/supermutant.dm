@@ -201,7 +201,7 @@
 	melee_damage_upper = 55
 	attack_verb_simple = "smashes"
 	attack_sound = "punch"
-	extra_projectiles = 1
+	rapid = 2
 	retreat_distance = 4
 	minimum_distance = 6
 	projectiletype = /obj/item/projectile/bullet/a556/simple
@@ -298,7 +298,7 @@
 	minimum_distance = 6
 	projectiletype = /obj/item/projectile/beam/mutant
 	projectilesound = 'sound/weapons/laser.ogg'
-	extra_projectiles = 8
+	rapid = 9
 	ranged_cooldown_time = 20
 	loot = list()
 	taunt_chance = 0

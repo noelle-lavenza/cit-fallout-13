@@ -72,7 +72,7 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/automatic/service)
 
 /mob/living/simple_animal/hostile/xray/ranged/rifle/burst
-	// extra_projectiles = 3
+	rapid = 4
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_grunt, /obj/item/gun/ballistic/automatic/assault_carbine)
 
 /mob/living/simple_animal/hostile/xray/ranged/shotgun
@@ -136,7 +136,7 @@
 	icon_state = "marauder_assault"
 	icon_living = "marauder_assault"
 	projectiletype = /obj/item/projectile/bullet/a556/match
-	// extra_projectiles = 3
+	rapid = 4
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder, /obj/item/gun/ballistic/automatic/assault_carbine)
 	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
 
@@ -148,7 +148,7 @@
 	maxHealth = 1100
 	health = 1100
 	projectiletype = /obj/item/projectile/bullet/a50MG
-	// extra_projectiles = 4
+	rapid = 5
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder_boss, /obj/item/gun/ballistic/automatic/m2a1)
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
 
@@ -156,7 +156,7 @@
 	icon_state = "mmarauder_rifle"
 	icon_living = "mmarauder_rifle"
 	projectiletype = /obj/item/projectile/bullet/a556/match
-	// extra_projectiles = 3
+	rapid = 4
 	loot = list(/obj/effect/mob_spawn/human/corpse/xray_marauder_boss, /obj/item/gun/ballistic/automatic/lsw)
 	projectilesound = 'sound/f13weapons/assault_carbine.ogg'
 

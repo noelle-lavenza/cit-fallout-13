@@ -127,7 +127,7 @@
 	attack_sound = 'sound/creatures/radroach_attack.ogg'
 	projectiletype = /obj/item/projectile/bile
 	projectilesound = 'sound/f13npc/centaur/spit.ogg'
-	extra_projectiles = 2
+	rapid = 3
 	speak_emote = list("skitters")
 	retreat_distance = 5
 	minimum_distance = 7

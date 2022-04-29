@@ -111,7 +111,7 @@
 	minimum_distance = 2
 	projectiletype = /obj/item/projectile/bullet/m44
 	projectilesound = 'sound/f13weapons/44mag.ogg'
-	extra_projectiles = 1
+	rapid = 2
 	aggro_vision_range = 15
 	obj_damage = 300
 
@@ -135,7 +135,7 @@
 	icon_dead = "raiderboss_dead"
 	maxHealth = 150
 	health = 150
-	extra_projectiles = 3
+	rapid = 4
 	projectiletype = /obj/item/projectile/bullet/c45/op
 	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/suit/armor/f13/combat/mk2/raider, /obj/item/clothing/head/helmet/f13/combat/mk2/raider)
 

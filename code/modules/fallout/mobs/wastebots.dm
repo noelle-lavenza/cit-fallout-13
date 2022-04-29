@@ -83,7 +83,7 @@
 	attack_verb_simple = "shoots a burst of flame at"
 	projectilesound = 'sound/weapons/laser.ogg'
 	projectiletype = /obj/item/projectile/f13plasma/scatter
-	extra_projectiles = 2
+	rapid = 3
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
@@ -142,7 +142,7 @@
 	attack_verb_simple = "violently punches"
 	projectilesound = 'sound/f13weapons/varmint_rifle.ogg'
 	projectiletype = /obj/item/projectile/bullet/a556/ap/simple
-	extra_projectiles = 3
+	rapid = 4
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 4
@@ -208,7 +208,7 @@
 	attack_sound = 'sound/weapons/punch1.ogg'
 	projectilesound = 'sound/weapons/laser.ogg'
 	projectiletype = /obj/item/projectile/beam/laser
-	extra_projectiles = 1
+	rapid = 2
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
@@ -249,7 +249,7 @@
 	speed = 4
 	melee_damage_lower = 5 //severely reduced melee damage here because its silly to have a ranged mob also be a cqc master
 	melee_damage_upper = 10
-	extra_projectiles = 0 //removed extra projectiles to make these easier to deal with on super lowpop
+	rapid = 0 //removed extra projectiles to make these easier to deal with on super lowpop
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
@@ -330,7 +330,7 @@
 	maxHealth = 280
 	melee_damage_lower = 48
 	melee_damage_upper = 72
-	extra_projectiles = 4 //5 projectiles
+	rapid = 5 //5 projectiles
 	ranged_cooldown_time = 12 //brrrrrrrrrrrrt
 	stat_attack = UNCONSCIOUS
 	ranged = TRUE
@@ -416,7 +416,7 @@
 /mob/living/simple_animal/hostile/handy/sentrybot/chew
 	name = "lil' chew-chew"
 	desc = "A pre-war military robot armed with a deadly gatling laser and covered in thick, oddly blue armor plating, the name Lil' Chew-Chew scratched onto it's front armour."
-	extra_projectiles = 6
+	rapid = 7
 	health = 1000
 	maxHealth = 1000 //CHONK
 	obj_damage = 300
@@ -426,7 +426,7 @@
 /mob/living/simple_animal/hostile/handy/sentrybot/chew/strong
 	name = "big chew-chew"
 	desc = "An oddly scorched pre-war military robot armed with a deadly gatling laser firing high-penetration experimental lasers and covered in thick, oddly blue armor plating, the name Big Chew-Chew scratched onto it's front armour crudely, highlighted by small bits of white paint. There seems to be an odd pack on the monstrosity of a sentrie's back, a chute at the bottom of it - there's the most scorch-marks on the robot here, so it's safe to assume this robot is capable of explosions. Better watch out!"
-	extra_projectiles = 4
+	rapid = 5
 	health = 1000
 	maxHealth = 1000 //CHONK
 	obj_damage = 300
@@ -543,7 +543,7 @@
 	attack_sound = 'sound/weapons/punch1.ogg'
 	projectilesound = 'sound/weapons/laser.ogg'
 	projectiletype = /obj/item/projectile/beam/laser/pistol
-	extra_projectiles = 1
+	rapid = 2
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2

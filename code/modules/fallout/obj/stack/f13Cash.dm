@@ -82,10 +82,10 @@
 
 /obj/item/stack/f13Cash/Initialize()
 	. = ..()
-	update_desc()
+	update_stack_desc()
 	update_icon()
 
-/obj/item/stack/f13Cash/proc/update_desc()
+/obj/item/stack/f13Cash/proc/update_stack_desc()
 	var/total_worth = get_item_credit_value()
 	desc = "It's worth [total_worth] [singular_name][ (latin) ? (( amount > 1 ) ? "i" : "us") : (( amount > 1 ) ? "s each" : "")].\n[flavor_desc]"
 
@@ -104,12 +104,12 @@
 
 /obj/item/stack/f13Cash/merge(obj/item/stack/S)
 	. = ..()
-	update_desc()
+	update_stack_desc()
 	update_icon()
 
 /obj/item/stack/f13Cash/use(used, transfer = FALSE)
 	. = ..()
-	update_desc()
+	update_stack_desc()
 	update_icon()
 
 /obj/item/stack/f13Cash/random
